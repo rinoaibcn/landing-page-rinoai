@@ -1974,10 +1974,10 @@
               <label for="f-servicio">¿Qué necesitas?</label>
               <select id="f-servicio" name="servicio">
                 <option value="">Selecciona un servicio</option>
-                <option value="automatizacion">Automatización de Procesos</option>
-                <option value="agentes">Chatbots y Agentes IA</option>
-                <option value="estrategia">Desarrollo Estratégico de IA</option>
-                <option value="otro">Otro / Aún no lo sé</option>
+                <option value="Automatización de Procesos">Automatización de Procesos</option>
+                <option value="Chatbots y Agentes IA">Chatbots y Agentes IA</option>
+                <option value="Desarrollo Estratégico de IA">Desarrollo Estratégico de IA</option>
+                <option value="Otro / Aún no lo sé">Otro / Aún no lo sé</option>
               </select>
             </div>
             <div class="form-group">
@@ -2464,10 +2464,13 @@
       btn.disabled = true;
 
       try {
+        const data = Object.fromEntries(new FormData(form));
+        if (!data.servicio) data.servicio = 'No especificado';
+
         const res = await fetch('https://formspree.io/f/mredaelb', {
           method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(form)
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
         });
 
         if (res.ok) {
