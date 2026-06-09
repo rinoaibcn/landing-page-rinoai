@@ -389,7 +389,6 @@
     }
     /* Hero entrance animation */
     .hero-logo-mark { animation: heroIn 0.7s cubic-bezier(0.4,0,0.2,1) 0s both; margin-bottom: 28px; }
-    .hero-badge { animation: heroIn 0.7s cubic-bezier(0.4,0,0.2,1) 0.1s both; }
     .hero h1 { animation: heroIn 0.7s cubic-bezier(0.4,0,0.2,1) 0.25s both; }
     .hero p { animation: heroIn 0.7s cubic-bezier(0.4,0,0.2,1) 0.4s both; }
     .hero-actions { animation: heroIn 0.7s cubic-bezier(0.4,0,0.2,1) 0.55s both; }
@@ -398,30 +397,6 @@
       to { opacity: 1; transform: none; }
     }
 
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(108,99,255,0.12);
-      border: 1px solid rgba(108,99,255,0.3);
-      border-radius: 100px;
-      padding: 6px 18px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent2);
-      margin-bottom: 32px;
-    }
-    .hero-badge::before {
-      content: '';
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 10px var(--accent);
-      animation: pulse 2s infinite;
-      flex-shrink: 0;
-    }
     @keyframes pulse {
       0%, 100% { opacity: 1; box-shadow: 0 0 10px var(--accent); }
       50% { opacity: 0.4; box-shadow: 0 0 4px var(--accent); }
@@ -1150,7 +1125,6 @@
       nav { padding: 14px 16px; }
       .nav-hamburger { padding: 6px; min-width: 44px; min-height: 44px; justify-content: center; align-items: center; }
       .hero { padding: 96px 20px 64px; }
-      .hero-badge { font-size: 0.72rem; padding: 5px 14px; }
       .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); margin-bottom: 18px; }
       .hero p { font-size: 0.97rem; margin-bottom: 32px; }
       .hero-actions { flex-direction: column; align-items: stretch; gap: 12px; }
@@ -1192,7 +1166,7 @@
       .reveal, .reveal-left, .reveal-right, .reveal-scale {
         transition: none !important; opacity: 1; transform: none;
       }
-      .hero-badge, .hero h1, .hero p, .hero-actions { animation: none; opacity: 1; }
+      .hero h1, .hero p, .hero-actions { animation: none; opacity: 1; }
       .tech-item { animation: none; }
     }
 
@@ -1640,7 +1614,6 @@
           <circle cx="84" cy="94" r="6" fill="#050508" stroke="#38bdf8" stroke-width="2.2"/><circle cx="84" cy="94" r="2.5" fill="#38bdf8"/>
         </svg>
       </div>
-      <div class="hero-badge">Inteligencia Artificial &amp; Automatizaciones</div>
       <h1>
         Automatización e<br />
         <span class="gradient-text">Inteligencia Artificial</span><br />
