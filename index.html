@@ -2429,5 +2429,145 @@
       }
     }
   </script>
+
+  <!-- ── CHAT WIDGET ── -->
+  <style>
+    #cw{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    #cw-btn{width:56px;height:56px;border-radius:50%;background:var(--accent);border:none;cursor:pointer;box-shadow:0 4px 24px rgba(108,99,255,.55);display:flex;align-items:center;justify-content:center;position:relative;transition:transform .2s,box-shadow .2s;flex-shrink:0}
+    #cw-btn:hover{transform:scale(1.08);box-shadow:0 6px 32px rgba(108,99,255,.7)}
+    #cw-btn svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;position:absolute;transition:opacity .2s,transform .2s}
+    .cw-ico-close{opacity:0;transform:rotate(-90deg)}
+    #cw.open .cw-ico-chat{opacity:0;transform:rotate(90deg)}
+    #cw.open .cw-ico-close{opacity:1;transform:rotate(0)}
+    #cw-win{display:none;flex-direction:column;width:340px;height:480px;background:#0d0d16;border:1px solid rgba(108,99,255,.25);border-radius:18px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.6)}
+    #cw.open #cw-win{display:flex}
+    #cw-hdr{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid rgba(108,99,255,.15);background:rgba(108,99,255,.07);flex-shrink:0}
+    #cw-av{width:34px;height:34px;border-radius:10px;background:rgba(108,99,255,.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    #cw-av svg{width:20px;height:20px}
+    #cw-title{font-size:.88rem;font-weight:600;color:var(--text)}
+    #cw-sub{font-size:.7rem;color:var(--text-muted);display:flex;align-items:center;gap:5px;margin-top:2px}
+    #cw-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;display:inline-block}
+    #cw-x{margin-left:auto;background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:1.4rem;line-height:1;padding:2px 6px;transition:color .2s}
+    #cw-x:hover{color:var(--text)}
+    #cw-msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:8px;scroll-behavior:smooth}
+    #cw-msgs::-webkit-scrollbar{width:3px}
+    #cw-msgs::-webkit-scrollbar-thumb{background:rgba(108,99,255,.3);border-radius:2px}
+    .cw-m{max-width:83%;padding:9px 13px;border-radius:14px;font-size:.84rem;line-height:1.55;word-break:break-word}
+    .cw-m.bot{background:rgba(255,255,255,.06);color:#cccce0;border-bottom-left-radius:3px;align-self:flex-start}
+    .cw-m.usr{background:var(--accent);color:#fff;border-bottom-right-radius:3px;align-self:flex-end}
+    .cw-dots{display:flex;gap:4px;align-items:center;padding:9px 13px;background:rgba(255,255,255,.06);border-radius:14px;border-bottom-left-radius:3px;align-self:flex-start}
+    .cw-dots span{width:5px;height:5px;background:rgba(255,255,255,.35);border-radius:50%;animation:cw-blink 1.2s infinite}
+    .cw-dots span:nth-child(2){animation-delay:.2s}
+    .cw-dots span:nth-child(3){animation-delay:.4s}
+    @keyframes cw-blink{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
+    #cw-form{display:flex;gap:8px;padding:10px 14px;border-top:1px solid rgba(108,99,255,.15);flex-shrink:0}
+    #cw-inp{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(108,99,255,.2);border-radius:10px;padding:9px 13px;color:var(--text);font-size:.84rem;outline:none;transition:border-color .2s;font-family:inherit}
+    #cw-inp:focus{border-color:rgba(108,99,255,.5)}
+    #cw-inp::placeholder{color:rgba(255,255,255,.28)}
+    #cw-snd{width:38px;height:38px;background:var(--accent);border:none;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s,transform .15s}
+    #cw-snd:hover:not(:disabled){background:#5b52e8;transform:scale(1.06)}
+    #cw-snd:disabled{opacity:.45;cursor:not-allowed}
+    #cw-snd svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    @media(max-width:420px){#cw-win{width:calc(100vw - 32px)}}
+  </style>
+
+  <div id="cw">
+    <div id="cw-win" role="dialog" aria-modal="true" aria-label="Chat RinoAI" aria-hidden="true">
+      <div id="cw-hdr">
+        <div id="cw-av">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+            <defs><linearGradient id="cw-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6c63ff"/><stop offset="100%" stop-color="#38bdf8"/></linearGradient></defs>
+            <line x1="30" y1="26" x2="30" y2="94" stroke="url(#cw-g)" stroke-width="12" stroke-linecap="round"/>
+            <path d="M30,26 Q78,26 78,50 Q78,74 30,74" fill="none" stroke="url(#cw-g)" stroke-width="12" stroke-linecap="round"/>
+            <line x1="42" y1="74" x2="84" y2="94" stroke="url(#cw-g)" stroke-width="11" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div id="cw-title">Asistente RinoAI</div>
+          <div id="cw-sub"><span id="cw-dot"></span>En línea</div>
+        </div>
+        <button id="cw-x" aria-label="Cerrar chat">×</button>
+      </div>
+      <div id="cw-msgs"></div>
+      <div id="cw-form">
+        <input id="cw-inp" type="text" placeholder="Escribe tu mensaje…" maxlength="500" autocomplete="off" />
+        <button id="cw-snd" aria-label="Enviar mensaje">
+          <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+    <button id="cw-btn" aria-label="Abrir asistente RinoAI" aria-expanded="false">
+      <svg class="cw-ico-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <svg class="cw-ico-close" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <script>
+  (function(){
+    const GREETING = '¡Hola! Soy el asistente de RinoAI. ¿Tienes alguna pregunta sobre nuestros servicios de IA y automatización?';
+    const cw = document.getElementById('cw');
+    const btn = document.getElementById('cw-btn');
+    const win = document.getElementById('cw-win');
+    const msgs = document.getElementById('cw-msgs');
+    const inp = document.getElementById('cw-inp');
+    const snd = document.getElementById('cw-snd');
+    let history = [], busy = false, opened = false;
+
+    function toggle() {
+      const open = cw.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+      win.setAttribute('aria-hidden', !open);
+      if (open && !opened) { opened = true; addMsg('bot', GREETING); }
+      if (open) inp.focus();
+    }
+
+    function addMsg(role, text) {
+      const d = document.createElement('div');
+      d.className = 'cw-m ' + role;
+      d.textContent = text;
+      msgs.appendChild(d);
+      msgs.scrollTop = msgs.scrollHeight;
+    }
+
+    function showTyping() {
+      const d = document.createElement('div');
+      d.className = 'cw-dots'; d.id = 'cw-typing';
+      d.innerHTML = '<span></span><span></span><span></span>';
+      msgs.appendChild(d);
+      msgs.scrollTop = msgs.scrollHeight;
+    }
+
+    async function send() {
+      const text = inp.value.trim();
+      if (!text || busy) return;
+      inp.value = '';
+      addMsg('usr', text);
+      history.push({ role: 'user', content: text });
+      busy = true; snd.disabled = true;
+      showTyping();
+      try {
+        const r = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: history.slice(-12) })
+        });
+        const d = await r.json();
+        document.getElementById('cw-typing')?.remove();
+        const reply = d.reply || 'Lo siento, ha ocurrido un error. Inténtalo de nuevo.';
+        addMsg('bot', reply);
+        history.push({ role: 'assistant', content: reply });
+      } catch {
+        document.getElementById('cw-typing')?.remove();
+        addMsg('bot', 'Sin conexión. Por favor, inténtalo de nuevo.');
+      }
+      busy = false; snd.disabled = false; inp.focus();
+    }
+
+    document.getElementById('cw-x').addEventListener('click', toggle);
+    btn.addEventListener('click', toggle);
+    snd.addEventListener('click', send);
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); send(); } });
+  })();
+  </script>
 </body>
 </html>
