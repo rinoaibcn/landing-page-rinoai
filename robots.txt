@@ -1,3 +1,32 @@
 User-agent: *
 Allow: /
-Sitemap: https://rinoai.com/sitemap.xml
+
+# Bots de IA — acceso explícito para lectura e indexación
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Content Signals (contentsignals.org) — permisos de uso del contenido
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+Sitemap: https://rinoai.es/sitemap.xml

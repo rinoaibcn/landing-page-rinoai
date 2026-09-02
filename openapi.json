@@ -1,0 +1,60 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "RinoAI Chat API",
+    "version": "1.0.0",
+    "description": "Asistente conversacional de RinoAI. Responde únicamente preguntas sobre RinoAI y sus servicios de IA y automatización para pymes. No proporciona precios."
+  },
+  "servers": [
+    { "url": "https://rinoai.es" }
+  ],
+  "paths": {
+    "/api/chat": {
+      "post": {
+        "operationId": "chat",
+        "summary": "Envía un turno de conversación y recibe la respuesta del asistente de RinoAI",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["messages"],
+                "properties": {
+                  "messages": {
+                    "type": "array",
+                    "description": "Historial de la conversación. Se usan como máximo los 10 últimos turnos.",
+                    "items": {
+                      "type": "object",
+                      "required": ["role", "content"],
+                      "properties": {
+                        "role": { "type": "string", "enum": ["user", "assistant"] },
+                        "content": { "type": "string" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Respuesta del asistente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": { "reply": { "type": "string" } }
+                }
+              }
+            }
+          },
+          "400": { "description": "Petición inválida (falta el array messages)" },
+          "405": { "description": "Método no permitido (solo POST)" },
+          "500": { "description": "Error al procesar el mensaje" }
+        }
+      }
+    }
+  }
+}

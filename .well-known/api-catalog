@@ -1,0 +1,21 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://rinoai.es/.well-known/api-catalog",
+      "service-desc": [
+        {
+          "href": "https://rinoai.es/openapi.json",
+          "type": "application/json",
+          "title": "RinoAI Chat API — asistente conversacional sobre los servicios de RinoAI"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://rinoai.es/llms.txt",
+          "type": "text/plain",
+          "title": "Resumen de RinoAI para agentes de IA"
+        }
+      ]
+    }
+  ]
+}

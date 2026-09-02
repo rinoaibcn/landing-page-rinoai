@@ -1,0 +1,30 @@
+# RinoAI
+
+> RinoAI integra inteligencia artificial y automatizaciones en pymes de Barcelona
+> para reducir costes operativos y multiplicar la velocidad de ejecución. Trabaja
+> con equipos de 5 a 200 personas de cualquier sector y lleva las soluciones a
+> producción en semanas, no en meses.
+
+## Servicios
+
+- [Automatización de Procesos](https://rinoai.es/#servicios): automatización de operaciones ineficientes con IA para reducir costes y tiempo de ejecución en cualquier departamento.
+- [Chatbots y Agentes IA](https://rinoai.es/#servicios): agentes que toman decisiones autónomas dentro de los procesos y SOPs de la empresa.
+- [Desarrollo Estratégico de IA](https://rinoai.es/#servicios): análisis de la operativa, identificación de dónde la IA genera más impacto y diseño de la hoja de ruta de implementación.
+
+## Cómo trabaja RinoAI
+
+- Empieza siempre con un diagnóstico gratuito para identificar el punto de mayor impacto.
+- Se encarga de toda la parte técnica: arquitectura, desarrollo e integración. El cliente solo necesita conocer el proceso a automatizar.
+- Stack habitual: LLMs de OpenAI, Anthropic y Google; automatización con Make, n8n y Zapier; frameworks de agentes como LangChain y CrewAI.
+- La mayoría de proyectos entran en producción en 2 a 6 semanas.
+
+## Contacto
+
+- [Formulario de contacto](https://rinoai.es/#contacto)
+- Email: rinoai.bcn@gmail.com
+- Ubicación: Barcelona, España
+
+## Notas
+
+- No se publican precios ni tarifas: cada propuesta es a medida tras una llamada inicial gratuita.
+- API pública: [POST /api/chat](https://rinoai.es/.well-known/api-catalog) — asistente conversacional sobre los servicios de RinoAI.

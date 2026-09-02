@@ -184,8 +184,11 @@
   <link rel="alternate" hreflang="es-ES" href="https://rinoai.es/" />
   <link rel="alternate" hreflang="x-default" href="https://rinoai.es/" />
 
+  <!-- Versión Markdown para agentes de IA / LLMs -->
+  <link rel="alternate" type="text/markdown" href="/index.md" title="RinoAI en Markdown" />
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Resumen de RinoAI para LLMs" />
+
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <link rel="icon" type="image/png" href="./favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" />
@@ -2567,6 +2570,33 @@
     btn.addEventListener('click', toggle);
     snd.addEventListener('click', send);
     inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); send(); } });
+  })();
+  </script>
+
+  <!-- WebMCP: expone el asistente de RinoAI como herramienta para agentes en el navegador -->
+  <script>
+  (function () {
+    if (!('modelContext' in navigator) || typeof navigator.modelContext.provideContext !== 'function') return;
+    navigator.modelContext.provideContext({
+      tools: [{
+        name: 'ask_rinoai',
+        description: 'Pregunta al asistente de RinoAI sobre sus servicios de IA y automatización para pymes (Barcelona). No devuelve precios.',
+        inputSchema: {
+          type: 'object',
+          properties: { question: { type: 'string', description: 'Pregunta en lenguaje natural sobre RinoAI o sus servicios.' } },
+          required: ['question']
+        },
+        async execute({ question }) {
+          const r = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ messages: [{ role: 'user', content: String(question || '') }] })
+          });
+          const data = await r.json();
+          return { content: [{ type: 'text', text: data.reply || data.error || 'Sin respuesta.' }] };
+        }
+      }]
+    });
   })();
   </script>
 </body>
