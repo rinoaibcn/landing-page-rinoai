@@ -188,7 +188,10 @@
   <link rel="alternate" type="text/markdown" href="/index.md" title="RinoAI en Markdown" />
   <link rel="alternate" type="text/plain" href="/llms.txt" title="Resumen de RinoAI para LLMs" />
 
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" />
@@ -210,6 +213,7 @@
     }
 
     html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: 80px; }
 
     body {
       background: var(--bg);
@@ -2215,6 +2219,40 @@
         document.body.style.overflow = '';
       });
     });
+
+    // ── Desplazamiento suave sin dejar el # en la URL ──
+    (function () {
+      function goTo(hash, smooth) {
+        const behavior = smooth ? 'smooth' : 'auto';
+        if (!hash || hash === '#' || hash === '#inicio') {
+          window.scrollTo({ top: 0, behavior });
+          return true;
+        }
+        const el = document.getElementById(hash.slice(1));
+        if (!el) return false;
+        el.scrollIntoView({ behavior, block: 'start' });
+        return true;
+      }
+      function cleanUrl() {
+        history.replaceState(null, '', location.pathname + location.search);
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        if (a.closest('#privacyModal')) return; // el modal de privacidad tiene su propio scroll
+        a.addEventListener('click', e => {
+          if (goTo(a.getAttribute('href'), true)) {
+            e.preventDefault();
+            cleanUrl();
+          }
+        });
+      });
+      // Si se entra con enlace externo tipo rinoai.es/#servicios, desplázate y limpia la URL
+      if (location.hash.length > 1) {
+        const target = location.hash;
+        window.addEventListener('load', () => {
+          setTimeout(() => { if (goTo(target, false)) cleanUrl(); }, 50);
+        });
+      }
+    })();
 
     // ── Particles ──
     (function() {
