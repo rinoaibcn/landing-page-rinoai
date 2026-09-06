@@ -18,6 +18,11 @@ SOPs de la empresa.
 Analizamos la operativa de la empresa, identificamos dónde la IA genera más
 impacto y diseñamos la hoja de ruta de implementación.
 
+### Visibilidad en IA y Buscadores (AEO)
+Auditamos y optimizamos tu web para que los crawlers y agentes de IA (ChatGPT,
+Perplexity, Google AI Overviews) la detecten y la citen: datos estructurados,
+robots.txt, llms.txt, negociación Markdown y estándares para agentes.
+
 ## Preguntas frecuentes
 
 **¿Cuánto tarda un proyecto?**

@@ -10,6 +10,7 @@
 - [Automatización de Procesos](https://rinoai.es/#servicios): automatización de operaciones ineficientes con IA para reducir costes y tiempo de ejecución en cualquier departamento.
 - [Chatbots y Agentes IA](https://rinoai.es/#servicios): agentes que toman decisiones autónomas dentro de los procesos y SOPs de la empresa.
 - [Desarrollo Estratégico de IA](https://rinoai.es/#servicios): análisis de la operativa, identificación de dónde la IA genera más impacto y diseño de la hoja de ruta de implementación.
+- [Visibilidad en IA y Buscadores (AEO)](https://rinoai.es/#servicios): auditoría y optimización de la web para que los crawlers y agentes de IA (ChatGPT, Perplexity, Google AI Overviews) detecten y citen el negocio — datos estructurados, robots.txt, llms.txt y estándares para agentes.
 
 ## Cómo trabaja RinoAI
 
