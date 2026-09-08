@@ -1516,13 +1516,27 @@
       .faq-answer-inner { padding: 0 20px 18px; }
     }
   </style>
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBNS0EM7DB"></script>
+  <!-- Google Analytics 4 — Consent Mode v2: no se carga hasta que el usuario acepta las cookies -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
+    });
     gtag('js', new Date());
-    gtag('config', 'G-FBNS0EM7DB');
+    window.rinoaiLoadGA = function () {
+      if (window.__rinoaiGA) return;
+      window.__rinoaiGA = true;
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FBNS0EM7DB';
+      document.head.appendChild(s);
+      gtag('config', 'G-FBNS0EM7DB', { anonymize_ip: true });
+    };
   </script>
 </head>
 <body>
@@ -2015,6 +2029,7 @@
       <span class="footer-copy">© 2026 RinoAI. Todos los derechos reservados.</span>
       <div class="footer-legal-links">
         <a href="#" onclick="openPrivacy();return false;">Política de Privacidad</a>
+        <a href="#" onclick="rinoaiOpenCookieSettings();return false;">Configurar cookies</a>
       </div>
     </div>
   </footer>
@@ -2033,7 +2048,7 @@
       <div class="privacy-hero-content">
         <div class="privacy-label">Legal</div>
         <h2>Política de Privacidad</h2>
-        <p>Última actualización: 26 de abril de 2026 · Responsable: RinoAI · Aplicable en España y la Unión Europea</p>
+        <p>Última actualización: 8 de septiembre de 2026 · Responsable: RinoAI · Aplicable en España y la Unión Europea</p>
       </div>
     </div>
 
@@ -2072,7 +2087,7 @@
             <li>Tipo de servicio de interés</li>
             <li>Contenido del mensaje que nos envías</li>
           </ul>
-          <p>No recogemos datos de navegación de forma directa, ni utilizamos herramientas de analítica de terceros que almacenen identificadores personales sin tu consentimiento previo.</p>
+          <p>Si aceptas las cookies analíticas en el aviso de cookies, utilizamos <strong>Google Analytics 4</strong> para obtener estadísticas de uso agregadas (páginas vistas, origen del tráfico, tipo de dispositivo, país). No usamos esa información para identificarte personalmente y la dirección IP se recoge de forma anonimizada. Si rechazas las cookies, no se carga ninguna herramienta de analítica.</p>
         </section>
 
         <div class="privacy-section-divider"></div>
@@ -2114,12 +2129,18 @@
           <div class="privacy-section-number">05</div>
           <h2>Destinatarios y transferencias internacionales</h2>
           <p>No cedemos ni vendemos tus datos personales a terceros. Únicamente podrán acceder a ellos los siguientes encargados del tratamiento, que actúan bajo nuestras instrucciones y con las garantías adecuadas:</p>
-          <ul>
-            <li><strong>Proveedores de correo electrónico</strong> (p. ej. Google Workspace): para la gestión de comunicaciones.</li>
-            <li><strong>Proveedores de alojamiento web</strong>: para el funcionamiento del sitio.</li>
-            <li><strong>Herramientas de automatización e IA</strong> utilizadas internamente en la prestación del servicio contratado.</li>
-          </ul>
-          <p>Cuando alguno de estos proveedores esté ubicado fuera del Espacio Económico Europeo, nos aseguramos de que existan garantías adecuadas (Decisión de adecuación de la Comisión Europea o Cláusulas Contractuales Tipo).</p>
+          <table class="privacy-table">
+            <thead>
+              <tr><th>Proveedor</th><th>Finalidad</th><th>Ubicación</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Vercel Inc.</td><td>Alojamiento del sitio web</td><td>EE. UU. (CCT / DPF)</td></tr>
+              <tr><td>Formspree, Inc.</td><td>Gestión del formulario de contacto</td><td>EE. UU. (CCT / DPF)</td></tr>
+              <tr><td>Google Ireland Ltd. / Google LLC</td><td>Analítica web (Google Analytics 4), solo si aceptas las cookies; correo electrónico</td><td>UE / EE. UU. (DPF)</td></tr>
+              <tr><td>OpenAI, L.L.C.</td><td>Procesamiento de los mensajes enviados al asistente de chat de la web</td><td>EE. UU. (CCT)</td></tr>
+            </tbody>
+          </table>
+          <p>Para los proveedores ubicados fuera del Espacio Económico Europeo, las transferencias se amparan en el marco <em>Data Privacy Framework</em> (DPF) UE-EE. UU. o en Cláusulas Contractuales Tipo (CCT) aprobadas por la Comisión Europea.</p>
         </section>
 
         <div class="privacy-section-divider"></div>
@@ -2147,16 +2168,18 @@
         <section class="privacy-section" id="pp-cookies">
           <div class="privacy-section-number">07</div>
           <h2>Cookies y tecnologías similares</h2>
-          <p>Este sitio web puede utilizar cookies técnicas estrictamente necesarias para su correcto funcionamiento. No utilizamos cookies de rastreo publicitario ni de terceros sin tu consentimiento previo.</p>
+          <p>Al entrar en el sitio te mostramos un <strong>aviso de cookies</strong> donde puedes aceptar o rechazar las cookies analíticas. Las cookies de analítica <strong>no se cargan hasta que las aceptas</strong> de forma expresa. No utilizamos cookies publicitarias ni de seguimiento entre sitios.</p>
           <table class="privacy-table">
             <thead>
-              <tr><th>Tipo</th><th>Finalidad</th><th>Duración</th></tr>
+              <tr><th>Cookie</th><th>Tipo / Titular</th><th>Finalidad</th><th>Duración</th></tr>
             </thead>
             <tbody>
-              <tr><td>Técnicas / Sesión</td><td>Funcionamiento básico del sitio web</td><td>Sesión (se eliminan al cerrar el navegador)</td></tr>
+              <tr><td><code>rinoai_cookie_consent</code></td><td>Técnica propia</td><td>Recordar si has aceptado o rechazado las cookies analíticas</td><td>Persistente (hasta que la borres)</td></tr>
+              <tr><td><code>_ga</code></td><td>Analítica · Google</td><td>Distinguir usuarios de forma anónima (Google Analytics 4)</td><td>2 años</td></tr>
+              <tr><td><code>_ga_FBNS0EM7DB</code></td><td>Analítica · Google</td><td>Mantener el estado de la sesión (Google Analytics 4)</td><td>2 años</td></tr>
             </tbody>
           </table>
-          <p>Puedes configurar tu navegador para bloquear o eliminar las cookies. Ten en cuenta que algunas funcionalidades del sitio pueden verse afectadas.</p>
+          <p>Puedes cambiar tu elección en cualquier momento desde el enlace <strong>«Configurar cookies»</strong> del pie de página, o bloquear y eliminar las cookies desde la configuración de tu navegador.</p>
         </section>
 
         <div class="privacy-section-divider"></div>
@@ -2693,6 +2716,57 @@
         }
       }]
     });
+  })();
+  </script>
+
+  <!-- ── Aviso de cookies ── -->
+  <style>
+    #ck-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:10001;
+      background:#0d0d16;border:1px solid rgba(108,99,255,.3);border-radius:14px;
+      box-shadow:0 20px 60px rgba(0,0,0,.55);padding:16px 18px;
+      font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;color:#d8d8e6}
+    #ck-banner .ck-inner{max-width:1100px;margin:0 auto;display:flex;gap:16px 20px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+    #ck-banner .ck-txt{margin:0;flex:1 1 440px;min-width:260px}
+    #ck-banner a{color:#a78bfa;text-decoration:underline}
+    #ck-banner .ck-btns{display:flex;gap:10px;flex:0 0 auto}
+    #ck-banner .ck-btn{border-radius:9px;padding:9px 20px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid transparent;font-family:inherit}
+    #ck-banner .ck-ghost{background:transparent;border-color:rgba(255,255,255,.24);color:#d8d8e6}
+    #ck-banner .ck-ghost:hover{border-color:rgba(255,255,255,.45)}
+    #ck-banner .ck-solid{background:#6c63ff;color:#fff}
+    #ck-banner .ck-solid:hover{background:#5b52e8}
+    @media(max-width:560px){#ck-banner .ck-btns{width:100%}#ck-banner .ck-btn{flex:1}}
+  </style>
+  <div id="ck-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+    <div class="ck-inner">
+      <p class="ck-txt">Usamos una cookie propia necesaria y, solo si lo aceptas, cookies de <strong>Google Analytics</strong> para medir el tráfico de forma anónima. Consulta la <a href="#" id="ck-policy">política de cookies</a>.</p>
+      <div class="ck-btns">
+        <button type="button" id="ck-reject" class="ck-btn ck-ghost">Rechazar</button>
+        <button type="button" id="ck-accept" class="ck-btn ck-solid">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function () {
+    var KEY = 'rinoai_cookie_consent';
+    var banner = document.getElementById('ck-banner');
+    function applyConsent(v){ if (v === 'granted' && typeof window.rinoaiLoadGA === 'function') window.rinoaiLoadGA(); }
+    function choose(v){ try { localStorage.setItem(KEY, v); } catch (e) {} banner.hidden = true; applyConsent(v); }
+    var stored = null;
+    try { stored = localStorage.getItem(KEY); } catch (e) {}
+    if (stored === 'granted' || stored === 'denied') { applyConsent(stored); }
+    else { banner.hidden = false; }
+    document.getElementById('ck-accept').addEventListener('click', function(){ choose('granted'); });
+    document.getElementById('ck-reject').addEventListener('click', function(){ choose('denied'); });
+    document.getElementById('ck-policy').addEventListener('click', function(e){
+      e.preventDefault();
+      if (typeof openPrivacy === 'function') openPrivacy();
+      var t = document.getElementById('pp-cookies');
+      if (t) setTimeout(function(){ t.scrollIntoView({ behavior:'smooth', block:'start' }); }, 140);
+    });
+    window.rinoaiOpenCookieSettings = function(){
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      banner.hidden = false;
+    };
   })();
   </script>
 </body>
