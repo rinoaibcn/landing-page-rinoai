@@ -7,10 +7,17 @@
 
 ## Servicios
 
-- [Automatización de Procesos](https://rinoai.es/#servicios): automatización de operaciones ineficientes con IA para reducir costes y tiempo de ejecución en cualquier departamento.
-- [Chatbots y Agentes IA](https://rinoai.es/#servicios): agentes que toman decisiones autónomas dentro de los procesos y SOPs de la empresa.
-- [Desarrollo Estratégico de IA](https://rinoai.es/#servicios): análisis de la operativa, identificación de dónde la IA genera más impacto y diseño de la hoja de ruta de implementación.
-- [Visibilidad en IA y Buscadores (AEO)](https://rinoai.es/#servicios): auditoría y optimización de la web para que los crawlers y agentes de IA (ChatGPT, Perplexity, Google AI Overviews) detecten y citen el negocio — datos estructurados, robots.txt, llms.txt y estándares para agentes.
+- [Automatización de procesos](https://rinoai.es/servicios/automatizacion-de-procesos): eliminamos tareas manuales y repetitivas en administración, ventas, operaciones y atención al cliente con IA y herramientas de automatización (Make, n8n, Zapier).
+- [Chatbots y agentes de IA](https://rinoai.es/servicios/agentes-ia): agentes que interpretan, consultan tus datos y toman decisiones autónomas dentro de tus procesos y SOP, integrados con tus herramientas.
+- [Desarrollo estratégico de IA](https://rinoai.es/servicios/desarrollo-estrategico-ia): análisis de la operativa, identificación de dónde la IA genera más impacto y hoja de ruta de implementación priorizada.
+- [Visibilidad en IA y buscadores (AEO)](https://rinoai.es/servicios/visibilidad-en-ia-aeo): auditoría y optimización de la web para que ChatGPT, Perplexity, Google AI Overviews y los agentes de IA la detecten y la citen (datos estructurados, robots.txt, llms.txt, estándares para agentes).
+- [Todos los servicios](https://rinoai.es/servicios)
+
+## Blog
+
+- [Cómo preparar tu web para que la cite ChatGPT y Perplexity](https://rinoai.es/blog/preparar-tu-web-para-que-la-cite-chatgpt): guía de AEO con las señales que leen los motores de respuesta con IA.
+- [Automatización de procesos con IA en pymes: por dónde empezar](https://rinoai.es/blog/automatizacion-de-procesos-con-ia-en-pymes-por-donde-empezar): criterios para elegir el primer proceso a automatizar.
+- [Agentes de IA y chatbots: en qué se diferencian](https://rinoai.es/blog/agentes-de-ia-vs-chatbots): la diferencia entre un bot de guion y un agente que decide.
 
 ## Cómo trabaja RinoAI
 
@@ -23,9 +30,11 @@
 
 - [Formulario de contacto](https://rinoai.es/#contacto)
 - Email: rinoai.bcn@gmail.com
+- Teléfono: +34 683 32 79 08
 - Ubicación: Barcelona, España
 
 ## Notas
 
 - No se publican precios ni tarifas: cada propuesta es a medida tras una llamada inicial gratuita.
+- [Política de privacidad y cookies](https://rinoai.es/politica-de-privacidad)
 - API pública: [POST /api/chat](https://rinoai.es/.well-known/api-catalog) — asistente conversacional sobre los servicios de RinoAI.

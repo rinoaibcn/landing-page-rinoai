@@ -639,6 +639,8 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
     }
+    .service-card h3 a { color: inherit; text-decoration: none; }
+    .service-card h3 a:hover { color: var(--accent2); }
     .service-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -1571,6 +1573,7 @@
       <li><a href="#nosotros" data-section="nosotros">Nosotros</a></li>
       <li><a href="#servicios" data-section="servicios">Servicios</a></li>
       <li><a href="#proceso" data-section="proceso">Proceso</a></li>
+      <li><a href="/blog">Blog</a></li>
       <li><a href="#contacto" class="nav-cta">Hablemos</a></li>
     </ul>
     <div class="nav-hamburger" id="hamburger" role="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMobile" tabindex="0">
@@ -1583,6 +1586,7 @@
     <a href="#nosotros" class="mobile-link">Nosotros</a>
     <a href="#servicios" class="mobile-link">Servicios</a>
     <a href="#proceso" class="mobile-link">Proceso</a>
+    <a href="/blog" class="mobile-link">Blog</a>
     <a href="#contacto" class="mobile-link">Hablemos →</a>
   </div>
 
@@ -1730,7 +1734,7 @@
         <div class="service-card reveal stagger-1">
           <div class="service-number">01</div>
           <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
-          <h3>Automatización de Procesos</h3>
+          <h3><a href="/servicios/automatizacion-de-procesos">Automatización de Procesos</a></h3>
           <p>Automatizamos mediante sistemas profundos las operaciones más ineficientes de cualquier departamento. Tecnología de primer nivel para reducir costes y tiempo de ejecución.</p>
           <a href="#contacto" class="service-link" aria-label="Solicitar automatización de procesos">
             Quiero automatizar mis procesos
@@ -1741,7 +1745,7 @@
         <div class="service-card reveal stagger-2">
           <div class="service-number">02</div>
           <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-5 5 5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/><path d="M2 20c0-4 4-7 10-7s10 3 10 7"/></svg></div>
-          <h3>Chatbots y Agentes IA</h3>
+          <h3><a href="/servicios/agentes-ia">Chatbots y Agentes IA</a></h3>
           <p>Desarrollamos agentes de inteligencia artificial capaces de tomar decisiones autónomas en cualquier departamento o SOP de pequeñas y medianas empresas.</p>
           <a href="#contacto" class="service-link" aria-label="Solicitar un agente de inteligencia artificial">
             Quiero un agente IA para mi empresa
@@ -1752,7 +1756,7 @@
         <div class="service-card reveal stagger-3">
           <div class="service-number">03</div>
           <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M5 20V8l7-6 7 6v12"/><path d="M9 20v-6h6v6"/></svg></div>
-          <h3>Desarrollo Estratégico de IA</h3>
+          <h3><a href="/servicios/desarrollo-estrategico-ia">Desarrollo Estratégico de IA</a></h3>
           <p>Analizamos la arquitectura operativa de tu empresa para identificar los puntos de mayor impacto y diseñar la hoja de ruta de integración de IA más eficiente.</p>
           <a href="#contacto" class="service-link" aria-label="Solicitar consultoría de estrategia de IA">
             Quiero una estrategia de IA a medida
@@ -1763,7 +1767,7 @@
         <div class="service-card reveal stagger-4">
           <div class="service-number">04</div>
           <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.4-5.4"/><path d="M16.4 2.3l.85 2.05 2.05.85-2.05.85-.85 2.05-.85-2.05L13.5 5.2l2.05-.85z"/></svg></div>
-          <h3>Visibilidad en IA y Buscadores</h3>
+          <h3><a href="/servicios/visibilidad-en-ia-aeo">Visibilidad en IA y Buscadores</a></h3>
           <p>Auditamos y preparamos tu web para que los crawlers y agentes de IA la encuentren y la citen: ChatGPT, Perplexity, Google AI Overviews. Datos estructurados, robots.txt, llms.txt y estándares para agentes.</p>
           <a href="#contacto" class="service-link" aria-label="Solicitar auditoría de visibilidad en IA">
             Quiero que la IA encuentre mi negocio
@@ -2012,9 +2016,10 @@
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="#proceso">Proceso</a></li>
-          <li><a href="#" onclick="openPrivacy();return false;">Política de Privacidad</a></li>
+          <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
         </ul>
       </div>
       <div class="footer-col">

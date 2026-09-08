@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo preparar tu web para que la cite ChatGPT y Perplexity | RinoAI</title>
+<meta name="description" content="Guía práctica de AEO: las señales que leen los motores de respuesta con IA (datos estructurados, robots.txt, llms.txt, contenido citable) y cómo publicarlas en tu web.">
+<link rel="canonical" href="https://rinoai.es/blog/preparar-tu-web-para-que-la-cite-chatgpt">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cómo preparar tu web para que la cite ChatGPT y Perplexity">
+<meta property="og:description" content="Las señales que leen los motores de respuesta con IA y cómo publicarlas en tu web.">
+<meta property="og:url" content="https://rinoai.es/blog/preparar-tu-web-para-que-la-cite-chatgpt">
+<meta property="og:image" content="https://rinoai.es/og-image.png">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="RinoAI">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/consent.js" defer></script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cómo preparar tu web para que la cite ChatGPT y Perplexity",
+    "description": "Guía práctica de AEO: las señales que leen los motores de respuesta con IA y cómo publicarlas en tu web.",
+    "datePublished": "2026-09-08",
+    "dateModified": "2026-09-08",
+    "inLanguage": "es",
+    "author": { "@type": "Organization", "name": "RinoAI" },
+    "publisher": { "@type": "Organization", "name": "RinoAI", "url": "https://rinoai.es" },
+    "mainEntityOfPage": "https://rinoai.es/blog/preparar-tu-web-para-que-la-cite-chatgpt"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://rinoai.es/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://rinoai.es/blog"},
+      {"@type":"ListItem","position":3,"name":"Preparar tu web para que la cite ChatGPT","item":"https://rinoai.es/blog/preparar-tu-web-para-que-la-cite-chatgpt"}
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<header class="site-nav">
+  <div class="nav-wrap">
+    <a href="/" class="nav-logo" aria-label="RinoAI — Inicio">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="nvg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6c63ff"/><stop offset="100%" stop-color="#38bdf8"/></linearGradient></defs>
+        <rect x="4" y="4" width="112" height="112" rx="22" fill="#0f0f18" stroke="url(#nvg)" stroke-width="1.4"/>
+        <line x1="30" y1="26" x2="30" y2="94" stroke="url(#nvg)" stroke-width="9" stroke-linecap="round"/>
+        <path d="M30,26 Q78,26 78,50 Q78,74 30,74" fill="none" stroke="url(#nvg)" stroke-width="9" stroke-linecap="round"/>
+        <line x1="42" y1="74" x2="84" y2="94" stroke="url(#nvg)" stroke-width="8" stroke-linecap="round"/>
+      </svg>
+      <span>RinoAI</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/#nosotros">Nosotros</a>
+      <a href="/servicios">Servicios</a>
+      <a href="/blog">Blog</a>
+      <a href="/#contacto" class="nav-cta">Hablemos</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container narrow">
+    <div class="breadcrumb"><a href="/">Inicio</a> / <a href="/blog">Blog</a> / Preparar tu web para que la cite ChatGPT</div>
+    <span class="eyebrow">AEO</span>
+    <h1>Cómo preparar tu web para que la cite ChatGPT y Perplexity</h1>
+    <p class="post-meta">8 de septiembre de 2026 · 7 min de lectura</p>
+  </div>
+</div>
+
+<main>
+  <article class="container narrow prose">
+    <p>Cada vez más gente resuelve dudas preguntando a ChatGPT, Perplexity o al resumen con IA de Google en lugar de mirar una lista de resultados. Cuando eso pasa, la pregunta ya no es "¿salgo el primero en Google?", sino "¿me menciona la IA cuando alguien pregunta por mi sector?". Optimizar para eso se llama <strong>AEO</strong> (<em>Answer Engine Optimization</em>).</p>
+    <p>Lo importante: una web puede posicionar bien en Google y aun así ser invisible para estos sistemas, porque no publica las señales que ellos leen. Estas son las que más pesan y cómo ponerlas.</p>
+
+    <h2>1. Datos estructurados (JSON-LD)</h2>
+    <p>Los modelos entienden mucho mejor una web cuando el significado está explícito. El JSON-LD es un bloque de código que declara, en formato máquina, qué eres y qué ofreces. Como mínimo:</p>
+    <ul>
+      <li><code>Organization</code> o <code>LocalBusiness</code>: nombre, descripción, ubicación, teléfono, enlaces a tus perfiles (<code>sameAs</code>).</li>
+      <li><code>Service</code> por cada servicio que prestas.</li>
+      <li><code>FAQPage</code> con tus preguntas frecuentes: es de lo más citable que existe, porque ya viene en formato pregunta-respuesta.</li>
+    </ul>
+
+    <h2>2. Contenido citable, no folleto</h2>
+    <p>Una IA cita frases que responden algo de forma directa y autónoma. Un párrafo comercial de cinco líneas sin una afirmación clara no sirve. Revisa tus páginas y asegúrate de que cada sección responde una pregunta concreta en las dos primeras frases. Los encabezados en forma de pregunta ("¿Cuánto tarda un proyecto?") ayudan mucho.</p>
+
+    <h2>3. robots.txt con reglas para bots de IA</h2>
+    <p>Los rastreadores de IA tienen sus propios nombres. Si tu <code>robots.txt</code> no los menciona, dependes de la regla genérica. Conviene darles acceso explícito:</p>
+    <blockquote>User-agent: GPTBot → Allow: /<br>User-agent: ClaudeBot → Allow: /<br>User-agent: PerplexityBot → Allow: /<br>User-agent: Google-Extended → Allow: /</blockquote>
+    <p>Y añadir una línea de <em>Content Signals</em> para declarar qué usos permites (indexación, entrenamiento, uso como contexto).</p>
+
+    <h2>4. llms.txt y una versión en Markdown</h2>
+    <p>El archivo <code>/llms.txt</code> (propuesta de llmstxt.org) es un índice en Markdown de tu sitio pensado para modelos de lenguaje: un resumen del negocio y enlaces a tus páginas clave con una frase de contexto cada una. Sirve para que un agente entienda tu web sin tener que interpretar todo el HTML. Servir también una versión Markdown de tus páginas principales (por negociación de contenido o con archivos <code>.md</code>) reduce el ruido para la IA.</p>
+
+    <h2>5. Descubribilidad</h2>
+    <p>Lo básico de siempre, pero bien hecho: un <code>sitemap.xml</code> con todas tus URLs y el dominio correcto, cabeceras HTTP <code>Link</code> apuntando a tu sitemap y recursos, y —si expones alguna API pública— un catálogo en <code>/.well-known/api-catalog</code>.</p>
+
+    <h2>6. Señales fuera de tu web</h2>
+    <p>Los motores de respuesta se fían de las entidades que aparecen citadas en varios sitios. Ficha de Google Business completa, perfiles sociales enlazados entre sí y con la web, alguna mención en directorios o medios del sector. Sin eso, por muy bien montada que esté tu web, la IA no tiene con qué contrastar que eres un negocio real.</p>
+
+    <h2>Cómo saber cómo estás</h2>
+    <p>Existen escáneres que puntúan la preparación de una web para agentes de IA revisando estos estándares. Es un buen punto de partida para saber qué te falta y priorizarlo.</p>
+
+    <div class="cta-band" style="text-align:left;margin-top:44px">
+      <h2>Te auditamos la web</h2>
+      <p>Revisamos tu sitio con estos criterios, te damos la puntuación y aplicamos las correcciones en tu código.</p>
+      <a href="/servicios/visibilidad-en-ia-aeo" class="btn btn-primary">Ver el servicio de AEO</a>
+    </div>
+
+    <h2>Sigue leyendo</h2>
+    <ul class="post-list">
+      <li><a href="/blog/agentes-de-ia-vs-chatbots"><h3>Agentes de IA y chatbots: en qué se diferencian</h3><p>La diferencia real entre un bot de guion y un agente que decide.</p></a></li>
+      <li><a href="/blog/automatizacion-de-procesos-con-ia-en-pymes-por-donde-empezar"><h3>Automatización de procesos con IA: por dónde empezar</h3><p>Cómo elegir el primer proceso a automatizar sin equivocarte.</p></a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col" style="max-width:280px">
+        <a href="/" class="nav-logo" style="font-size:17px"><span>RinoAI</span></a>
+        <p style="margin-top:12px;font-size:13px;color:var(--text-dim)">IA y automatizaciones para pymes de Barcelona. Reducimos costes operativos y multiplicamos la velocidad de ejecución.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <a href="/servicios/automatizacion-de-procesos">Automatización de procesos</a>
+        <a href="/servicios/agentes-ia">Chatbots y agentes IA</a>
+        <a href="/servicios/desarrollo-estrategico-ia">Desarrollo estratégico de IA</a>
+        <a href="/servicios/visibilidad-en-ia-aeo">Visibilidad en IA (AEO)</a>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <a href="/blog">Blog</a>
+        <a href="/#proceso">Cómo trabajamos</a>
+        <a href="/#contacto">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="/politica-de-privacidad">Política de privacidad</a>
+        <a href="/politica-de-privacidad#cookies">Política de cookies</a>
+        <a href="#" onclick="rinoaiOpenCookieSettings();return false;">Configurar cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RinoAI · Barcelona, España</span>
+      <a href="mailto:rinoai.bcn@gmail.com">rinoai.bcn@gmail.com</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
