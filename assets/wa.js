@@ -1,7 +1,6 @@
 /* RinoAI — botón flotante de WhatsApp (esquina inferior derecha) */
 (function () {
   var NUM = '34683327908';
-  var MSG = encodeURIComponent('Hola, me gustaría saber más sobre RinoAI.');
 
   var css = document.createElement('style');
   css.textContent =
@@ -15,7 +14,7 @@
 
   var a = document.createElement('a');
   a.id = 'wa-fab';
-  a.href = 'https://wa.me/' + NUM + '?text=' + MSG;
+  a.href = 'https://wa.me/' + NUM;
   a.target = '_blank';
   a.rel = 'noopener';
   a.setAttribute('aria-label', 'Escríbenos por WhatsApp');
