@@ -2531,7 +2531,7 @@
 
   <!-- ── CHAT WIDGET ── -->
   <style>
-    #cw{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    #cw{position:fixed;bottom:24px;left:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
     #cw-btn{width:56px;height:56px;border-radius:50%;background:var(--accent);border:none;cursor:pointer;box-shadow:0 4px 24px rgba(108,99,255,.55);display:flex;align-items:center;justify-content:center;position:relative;transition:transform .2s,box-shadow .2s;flex-shrink:0}
     #cw-btn:hover{transform:scale(1.08);box-shadow:0 6px 32px rgba(108,99,255,.7)}
     #cw-btn svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;position:absolute;transition:opacity .2s,transform .2s}
@@ -2726,20 +2726,20 @@
 
   <!-- ── Aviso de cookies ── -->
   <style>
-    #ck-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:10001;
+    #ck-banner{position:fixed;left:20px;bottom:96px;z-index:10002;width:320px;max-width:calc(100vw - 40px);
       background:#0d0d16;border:1px solid rgba(108,99,255,.3);border-radius:14px;
-      box-shadow:0 20px 60px rgba(0,0,0,.55);padding:16px 18px;
-      font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;color:#d8d8e6}
-    #ck-banner .ck-inner{max-width:1100px;margin:0 auto;display:flex;gap:16px 20px;align-items:center;flex-wrap:wrap;justify-content:space-between}
-    #ck-banner .ck-txt{margin:0;flex:1 1 440px;min-width:260px}
+      box-shadow:0 16px 44px rgba(0,0,0,.55);padding:14px 16px;
+      font:13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;color:#d8d8e6}
+    #ck-banner .ck-inner{display:block}
+    #ck-banner .ck-txt{margin:0 0 12px}
     #ck-banner a{color:#a78bfa;text-decoration:underline}
-    #ck-banner .ck-btns{display:flex;gap:10px;flex:0 0 auto}
-    #ck-banner .ck-btn{border-radius:9px;padding:9px 20px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid transparent;font-family:inherit}
+    #ck-banner .ck-btns{display:flex;gap:8px}
+    #ck-banner .ck-btn{flex:1;border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:600;cursor:pointer;border:1px solid transparent;font-family:inherit}
     #ck-banner .ck-ghost{background:transparent;border-color:rgba(255,255,255,.24);color:#d8d8e6}
     #ck-banner .ck-ghost:hover{border-color:rgba(255,255,255,.45)}
     #ck-banner .ck-solid{background:#6c63ff;color:#fff}
     #ck-banner .ck-solid:hover{background:#5b52e8}
-    @media(max-width:560px){#ck-banner .ck-btns{width:100%}#ck-banner .ck-btn{flex:1}}
+    @media(max-width:560px){#ck-banner{left:12px;right:12px;width:auto;max-width:none;bottom:88px}}
   </style>
   <div id="ck-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
     <div class="ck-inner">
@@ -2774,5 +2774,8 @@
     };
   })();
   </script>
+
+  <!-- Botón flotante de WhatsApp -->
+  <script src="/assets/wa.js" defer></script>
 </body>
 </html>

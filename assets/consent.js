@@ -30,16 +30,15 @@
   function buildBanner() {
     var css = document.createElement('style');
     css.textContent =
-      '#ck-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:10001;background:#0d0d16;' +
-      'border:1px solid rgba(108,99,255,.3);border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.55);' +
-      'padding:16px 18px;font:14px/1.55 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#d8d8e6}' +
-      '#ck-banner .ck-inner{max-width:1080px;margin:0 auto;display:flex;gap:16px 20px;align-items:center;' +
-      'flex-wrap:wrap;justify-content:space-between}#ck-banner .ck-txt{margin:0;flex:1 1 440px;min-width:260px}' +
-      '#ck-banner a{color:#a78bfa;text-decoration:underline}#ck-banner .ck-btns{display:flex;gap:10px}' +
-      '#ck-banner button{border-radius:9px;padding:9px 20px;font-size:13px;font-weight:600;cursor:pointer;' +
+      '#ck-banner{position:fixed;left:20px;bottom:20px;z-index:10002;width:320px;max-width:calc(100vw - 40px);' +
+      'background:#0d0d16;border:1px solid rgba(108,99,255,.3);border-radius:14px;box-shadow:0 16px 44px rgba(0,0,0,.55);' +
+      'padding:14px 16px;font:13px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#d8d8e6}' +
+      '#ck-banner .ck-inner{display:block}#ck-banner .ck-txt{margin:0 0 12px}' +
+      '#ck-banner a{color:#a78bfa;text-decoration:underline}#ck-banner .ck-btns{display:flex;gap:8px}' +
+      '#ck-banner button{flex:1;border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:600;cursor:pointer;' +
       'border:1px solid transparent;font-family:inherit}#ck-banner .ck-ghost{background:transparent;' +
       'border-color:rgba(255,255,255,.24);color:#d8d8e6}#ck-banner .ck-solid{background:#6c63ff;color:#fff}' +
-      '@media(max-width:560px){#ck-banner .ck-btns{width:100%}#ck-banner button{flex:1}}';
+      '@media(max-width:560px){#ck-banner{left:12px;right:12px;width:auto;max-width:none;bottom:16px}}';
     document.head.appendChild(css);
 
     var b = document.createElement('div');
