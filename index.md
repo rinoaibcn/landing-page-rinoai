@@ -23,6 +23,12 @@ Auditamos y optimizamos tu web para que los crawlers y agentes de IA (ChatGPT,
 Perplexity, Google AI Overviews) la detecten y la citen: datos estructurados,
 robots.txt, llms.txt, negociación Markdown y estándares para agentes.
 
+## Vídeo: ¿Por qué tu web no aparece en ChatGPT?
+Explicamos por qué muchas webs son invisibles para ChatGPT y otros asistentes de
+IA, y qué hay que cambiar para que empiecen a citarlas:
+https://www.youtube.com/watch?v=VPGNxkN0DUE
+Más vídeos en https://www.youtube.com/@mauro.gutierrez
+
 ## Preguntas frecuentes
 
 **¿Cuánto tarda un proyecto?**

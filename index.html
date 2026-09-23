@@ -1043,6 +1043,24 @@
     }
     .footer-legal-links a:hover { color: var(--text); }
 
+    /* ── VIDEO ── */
+    .video-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 64px; align-items: center; }
+    .video-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+    .yt-embed { position: relative; aspect-ratio: 16/9; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); background: var(--bg3); box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 0 50px rgba(108,99,255,0.12); }
+    .yt-facade, .yt-frame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .yt-facade { padding: 0; cursor: pointer; background: none; display: block; }
+    .yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.82); transition: transform 0.4s, filter 0.3s; }
+    .yt-facade:hover img, .yt-facade:focus-visible img { transform: scale(1.03); filter: brightness(0.95); }
+    .yt-facade:focus-visible { outline: 2px solid var(--accent2); outline-offset: -2px; }
+    .yt-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 76px; height: 76px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 40px rgba(108,99,255,0.65); transition: transform 0.2s; }
+    .yt-facade:hover .yt-play { transform: translate(-50%,-50%) scale(1.08); }
+    .yt-play svg { width: 28px; height: 28px; margin-left: 4px; fill: #fff; }
+    .yt-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; opacity: 0.8; }
+    @media (max-width: 900px) {
+      .video-grid { grid-template-columns: 1fr; gap: 40px; }
+      .yt-play { width: 64px; height: 64px; }
+    }
+
     /* ── DIVIDER ── */
     .section-divider {
       width: 100%;
@@ -1813,6 +1831,39 @@
 
   <div class="section-divider"></div>
 
+  <!-- ── VIDEO ── -->
+  <section class="video" id="video">
+    <div class="container">
+      <div class="video-grid">
+        <div>
+          <span class="section-label reveal">Aprende con RinoAI</span>
+          <h2 class="section-title reveal stagger-1">¿Por qué tu web no aparece en ChatGPT?</h2>
+          <p class="section-sub reveal stagger-2">
+            Cada vez más clientes preguntan a una IA antes que a Google. En este vídeo te explicamos por qué muchas webs son invisibles para ChatGPT y qué hay que cambiar para que empiece a recomendarte.
+          </p>
+          <div class="video-actions reveal stagger-3">
+            <a href="/servicios/visibilidad-en-ia-aeo" class="btn-primary">
+              Ver servicio AEO
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@mauro.gutierrez" class="btn-ghost" target="_blank" rel="noopener">Más vídeos en YouTube</a>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="yt-embed">
+            <button type="button" class="yt-facade" data-yt="VPGNxkN0DUE" data-title="Por qué tu web no aparece en ChatGPT y cómo solucionarlo" aria-label="Reproducir vídeo: por qué tu web no aparece en ChatGPT y cómo solucionarlo">
+              <img src="https://i.ytimg.com/vi/VPGNxkN0DUE/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+              <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
+          <p class="yt-note">El vídeo se carga desde YouTube al pulsar reproducir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- ── FAQ ── -->
   <section class="faq" id="faq">
     <div class="container">
@@ -1964,6 +2015,7 @@
                 <option value="Automatización de Procesos">Automatización de Procesos</option>
                 <option value="Chatbots y Agentes IA">Chatbots y Agentes IA</option>
                 <option value="Desarrollo Estratégico de IA">Desarrollo Estratégico de IA</option>
+                <option value="Visibilidad en IA (AEO)">Visibilidad en IA (AEO)</option>
                 <option value="Otro / Aún no lo sé">Otro / Aún no lo sé</option>
               </select>
             </div>
@@ -2027,6 +2079,7 @@
         <ul>
           <li><a href="mailto:rinoai.bcn@gmail.com">rinoai.bcn@gmail.com</a></li>
           <li><a href="#contacto">Formulario de contacto</a></li>
+          <li><a href="https://www.youtube.com/@mauro.gutierrez" target="_blank" rel="noopener">YouTube</a></li>
         </ul>
       </div>
     </div>
@@ -2777,5 +2830,6 @@
 
   <!-- Botón flotante de WhatsApp -->
   <script src="/assets/wa.js" defer></script>
+  <script src="/assets/yt.js" defer></script>
 </body>
 </html>

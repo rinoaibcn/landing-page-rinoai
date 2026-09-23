@@ -19,6 +19,11 @@
 - [Automatización de procesos con IA en pymes: por dónde empezar](https://rinoai.es/blog/automatizacion-de-procesos-con-ia-en-pymes-por-donde-empezar): criterios para elegir el primer proceso a automatizar.
 - [Agentes de IA y chatbots: en qué se diferencian](https://rinoai.es/blog/agentes-de-ia-vs-chatbots): la diferencia entre un bot de guion y un agente que decide.
 
+## Vídeos
+
+- [Por qué tu web no aparece en ChatGPT y cómo solucionarlo](https://www.youtube.com/watch?v=VPGNxkN0DUE): explicación en vídeo del AEO y de los cambios que hacen que los asistentes de IA citen una web.
+- [Canal de YouTube de RinoAI](https://www.youtube.com/@mauro.gutierrez)
+
 ## Cómo trabaja RinoAI
 
 - Empieza siempre con un diagnóstico gratuito para identificar el punto de mayor impacto.
