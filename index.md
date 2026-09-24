@@ -23,6 +23,11 @@ Auditamos y optimizamos tu web para que los crawlers y agentes de IA (ChatGPT,
 Perplexity, Google AI Overviews) la detecten y la citen: datos estructurados,
 robots.txt, llms.txt, negociación Markdown y estándares para agentes.
 
+### Creación de Webs y Landing Pages
+Diseñamos y desarrollamos webs corporativas y landing pages a medida, rápidas y
+adaptadas al móvil, con formulario conectado a tu email, WhatsApp y aviso de
+cookies, y preparadas desde el primer día para Google y para ChatGPT.
+
 ## Vídeo: ¿Por qué tu web no aparece en ChatGPT?
 Explicamos por qué muchas webs son invisibles para ChatGPT y otros asistentes de
 IA, y qué hay que cambiar para que empiecen a citarlas:

@@ -11,6 +11,7 @@
 - [Chatbots y agentes de IA](https://rinoai.es/servicios/agentes-ia): agentes que interpretan, consultan tus datos y toman decisiones autónomas dentro de tus procesos y SOP, integrados con tus herramientas.
 - [Desarrollo estratégico de IA](https://rinoai.es/servicios/desarrollo-estrategico-ia): análisis de la operativa, identificación de dónde la IA genera más impacto y hoja de ruta de implementación priorizada.
 - [Visibilidad en IA y buscadores (AEO)](https://rinoai.es/servicios/visibilidad-en-ia-aeo): auditoría y optimización de la web para que ChatGPT, Perplexity, Google AI Overviews y los agentes de IA la detecten y la citen (datos estructurados, robots.txt, llms.txt, estándares para agentes).
+- [Creación de webs y landing pages](https://rinoai.es/servicios/creacion-de-webs-y-landing-pages): diseño y desarrollo de webs corporativas y landing pages a medida, rápidas y adaptadas al móvil, con formulario conectado al email, aviso de cookies y preparadas desde el primer día para buscadores y motores de respuesta con IA.
 - [Todos los servicios](https://rinoai.es/servicios)
 
 ## Blog

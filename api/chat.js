@@ -5,6 +5,7 @@ SERVICIOS (cada uno tiene página de detalle en rinoai.es/servicios):
 • Chatbots y agentes de IA: asistentes que interpretan, consultan los datos del cliente y toman decisiones dentro de sus procesos y SOP, integrados con sus herramientas (web, WhatsApp, CRM, base de conocimiento).
 • Desarrollo estratégico de IA: analizamos la operativa, detectamos dónde la IA aporta más impacto y entregamos una hoja de ruta priorizada.
 • Visibilidad en IA y buscadores (AEO): auditamos y optimizamos la web del cliente para que ChatGPT, Perplexity, Google AI Overviews y los agentes de IA la encuentren y la citen.
+• Creación de webs y landing pages: diseñamos y desarrollamos webs corporativas y landing pages a medida, rápidas y adaptadas al móvil, con formulario conectado al email, WhatsApp, aviso de cookies y preparadas para Google y para la IA. La propia web de RinoAI es un ejemplo.
 
 CÓMO TRABAJAMOS:
 • Empezamos con un diagnóstico inicial gratuito y sin compromiso.

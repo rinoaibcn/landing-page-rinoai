@@ -144,6 +144,16 @@
       "areaServed": "Barcelona, España",
       "serviceType": "Answer Engine Optimization (AEO)",
       "url": "https://rinoai.es/#servicios"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Creación de webs y landing pages",
+      "provider": { "@type": "Organization", "name": "RinoAI", "url": "https://rinoai.es" },
+      "description": "Diseño y desarrollo de webs corporativas y landing pages a medida para pymes: rápidas, adaptadas al móvil, con formulario conectado al email y preparadas para buscadores y motores de respuesta con IA.",
+      "areaServed": "Barcelona, España",
+      "serviceType": "Diseño y desarrollo web",
+      "url": "https://rinoai.es/servicios/creacion-de-webs-y-landing-pages"
     }
   ]
   </script>
@@ -231,7 +241,7 @@
       --card-bg: rgba(255,255,255,0.03);
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; overflow-x: clip; }
     section[id] { scroll-margin-top: 80px; }
 
     body {
@@ -240,6 +250,7 @@
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
+      overflow-x: clip;
       -webkit-text-size-adjust: 100%;
     }
 
@@ -674,6 +685,7 @@
       border-color: rgba(108,99,255,0.5);
       box-shadow: 0 24px 64px rgba(108,99,255,0.18);
     }
+    .service-card-wide { grid-column: 1 / -1; }
     .service-card:hover::before { opacity: 1; }
     .service-card:hover::after { opacity: 1; }
     .service-number {
@@ -1116,6 +1128,7 @@
       .footer-brand { grid-column: span 2; }
     }
     @media (max-width: 900px) {
+      .reveal-left, .reveal-right { transform: translateY(30px); }
       nav { padding: 16px 24px; }
       .nav-links { display: none; }
       .nav-hamburger { display: flex; }
@@ -1793,6 +1806,17 @@
           </a>
         </div>
 
+        <div class="service-card service-card-wide reveal stagger-5">
+          <div class="service-number">05</div>
+          <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M6 7h6"/><path d="M6 11h10"/></svg></div>
+          <h3><a href="/servicios/creacion-de-webs-y-landing-pages">Creación de Webs y Landing Pages</a></h3>
+          <p>Diseñamos y desarrollamos webs y landing pages a medida, rápidas y adaptadas al móvil. Con formulario conectado a tu email, WhatsApp y cookies, y preparadas desde el primer día para Google y para ChatGPT.</p>
+          <a href="#contacto" class="service-link" aria-label="Solicitar una web o landing page">
+            Quiero una web profesional
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M6 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -2016,6 +2040,7 @@
                 <option value="Chatbots y Agentes IA">Chatbots y Agentes IA</option>
                 <option value="Desarrollo Estratégico de IA">Desarrollo Estratégico de IA</option>
                 <option value="Visibilidad en IA (AEO)">Visibilidad en IA (AEO)</option>
+                <option value="Creación de web / landing page">Creación de web / landing page</option>
                 <option value="Otro / Aún no lo sé">Otro / Aún no lo sé</option>
               </select>
             </div>
