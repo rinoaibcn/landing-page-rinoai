@@ -51,7 +51,7 @@ No. Nos encargamos de toda la parte técnica: arquitectura, desarrollo e
 integración. Tu equipo solo necesita conocer el proceso que queremos automatizar.
 
 **¿Cuánto cuesta?**
-Cada proyecto es diferente. Empezamos siempre con un diagnóstico gratuito para
+Cada proyecto es diferente. Empezamos siempre con un diagnóstico para
 identificar el punto de mayor impacto y presentar una propuesta ajustada a tu
 presupuesto real.
 
@@ -65,4 +65,4 @@ CrewAI.
 - Formulario: https://rinoai.es/#contacto
 - Email: rinoai.bcn@gmail.com
 - Barcelona, España
-- Diagnóstico inicial gratuito. No publicamos precios: cada propuesta es a medida.
+- No publicamos precios: cada propuesta es a medida.

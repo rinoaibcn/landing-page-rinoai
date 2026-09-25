@@ -27,7 +27,7 @@
 
 ## Cómo trabaja RinoAI
 
-- Empieza siempre con un diagnóstico gratuito para identificar el punto de mayor impacto.
+- Empieza siempre con un diagnóstico para identificar el punto de mayor impacto.
 - Se encarga de toda la parte técnica: arquitectura, desarrollo e integración. El cliente solo necesita conocer el proceso a automatizar.
 - Stack habitual: LLMs de OpenAI, Anthropic y Google; automatización con Make, n8n y Zapier; frameworks de agentes como LangChain y CrewAI.
 - La mayoría de proyectos entran en producción en 2 a 6 semanas.
@@ -41,6 +41,6 @@
 
 ## Notas
 
-- No se publican precios ni tarifas: cada propuesta es a medida tras una llamada inicial gratuita.
+- No se publican precios ni tarifas: cada propuesta es a medida.
 - [Política de privacidad y cookies](https://rinoai.es/politica-de-privacidad)
 - API pública: [POST /api/chat](https://rinoai.es/.well-known/api-catalog) — asistente conversacional sobre los servicios de RinoAI.

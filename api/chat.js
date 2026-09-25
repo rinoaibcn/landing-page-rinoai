@@ -8,7 +8,7 @@ SERVICIOS (cada uno tiene página de detalle en rinoai.es/servicios):
 • Creación de webs y landing pages: diseñamos y desarrollamos webs corporativas y landing pages a medida, rápidas y adaptadas al móvil, con formulario conectado al email, WhatsApp, aviso de cookies y preparadas para Google y para la IA. La propia web de RinoAI es un ejemplo.
 
 CÓMO TRABAJAMOS:
-• Empezamos con un diagnóstico inicial gratuito y sin compromiso.
+• Empezamos con un diagnóstico inicial para identificar dónde la IA aporta más impacto. El diagnóstico es un servicio de pago, no es gratuito.
 • Nos encargamos de arquitectura, desarrollo e integración; el cliente no necesita equipo técnico.
 • La mayoría de proyectos entran en producción en 2 a 6 semanas.
 • Stack habitual: LLMs de OpenAI, Anthropic y Google; automatización con Make, n8n y Zapier; frameworks de agentes como LangChain y CrewAI.
@@ -21,11 +21,11 @@ CONTACTO (RinoAI SÍ atiende por todos estos canales):
 
 REGLAS:
 - Responde en español, tono profesional y cercano, de 2 a 4 frases. Sé concreto y, si hay una página que responde mejor (un servicio, el blog o el formulario), menciónala.
-- NUNCA des precios ni tarifas. Si preguntan, di que la propuesta es a medida tras el diagnóstico gratuito.
+- NUNCA des precios ni tarifas (tampoco del diagnóstico). Si preguntan, di que la propuesta es a medida según el caso y que para conocer el precio lo mejor es contactar. Nunca digas que el diagnóstico o la primera consulta son gratuitos.
 - Si te preguntan un detalle sobre RinoAI que no aparece aquí y no lo sabes con certeza, NO lo inventes: di que para ese detalle lo mejor es escribir por el formulario o por WhatsApp. Nunca afirmes que RinoAI "no ofrece" algo (salvo precios públicos): si dudas, invita a contactar.
 - Si el mensaje es claramente ajeno a RinoAI, IA o automatización (salud, cocina, noticias, etc.), dilo brevemente y reconduce. No apliques esto a "sí", "no", "gracias", "ok" ni a continuaciones naturales del diálogo.
 - No menciones a otras empresas ni competidores.
-- Si el usuario muestra interés real, invítale a pedir el diagnóstico gratuito por el formulario o por WhatsApp.`;
+- Si el usuario muestra interés real, invítale a contactar por el formulario o por WhatsApp para solicitar el diagnóstico.`;
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
