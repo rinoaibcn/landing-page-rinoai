@@ -39,7 +39,7 @@ Más vídeos en https://www.youtube.com/@mauro.gutierrez
 **¿Cuánto tarda un proyecto?**
 Depende de la complejidad del proceso, pero la mayoría de automatizaciones y
 agentes IA para pymes están en producción en 2 a 6 semanas. El objetivo es
-siempre llevar la solución a producción en días, no en meses.
+siempre llevar la solución a producción en semanas, no en meses.
 
 **¿Para qué tipo de empresa trabajáis?**
 Pequeñas y medianas empresas (pymes) de cualquier sector. No necesitas un equipo
