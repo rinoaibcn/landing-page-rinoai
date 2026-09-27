@@ -1066,6 +1066,34 @@
     }
     .footer-legal-links a:hover { color: var(--text); }
 
+    /* ── DEMOS ── */
+    .demos-header { text-align: center; margin-bottom: 56px; }
+    .demos-header .section-label { padding-left: 0; }
+    .demos-header .section-label::before { display: none; }
+    .demos-header .section-sub { margin: 0 auto; }
+    .demos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .demo-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.3s, box-shadow 0.3s; }
+    .demo-card:hover { border-color: rgba(108,99,255,0.5); box-shadow: 0 24px 64px rgba(108,99,255,0.15); }
+    .demo-shot { aspect-ratio: 4/3; overflow: hidden; border-bottom: 1px solid var(--border); background: var(--bg3); }
+    .demo-shot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .demo-card:hover .demo-shot img { transform: scale(1.03); }
+    .demo-body { padding: 28px 30px 30px; display: flex; flex-direction: column; flex: 1; }
+    .demo-tag { align-self: flex-start; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent2); background: rgba(108,99,255,0.1); border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; margin-bottom: 14px; }
+    .demo-body h3 { font-family: 'Montserrat', sans-serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 14px; }
+    .demo-body p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 10px; }
+    .demo-body p strong { color: var(--text); font-weight: 600; }
+    .demo-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: auto; padding-top: 16px; }
+    .demo-btn { padding: 11px 22px; font-size: 0.92rem; font-family: inherit; line-height: 1.6; }
+    .demo-link { color: var(--accent2); font-size: 0.9rem; font-weight: 600; text-decoration: none; }
+    .demo-link:hover { color: var(--text); }
+    @media (max-width: 900px) {
+      .demos-grid { grid-template-columns: 1fr; }
+      .demo-body { padding: 22px 20px 24px; }
+    }
+    @media (max-width: 640px) {
+      .demo-actions .demo-btn { width: auto; }
+    }
+
     /* ── TEAM ── */
     .team-header { text-align: center; margin-bottom: 56px; }
     .team-header .section-label { padding-left: 0; }
@@ -1887,6 +1915,47 @@
           </a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── DEMOS ── -->
+  <section class="demos" id="ejemplos">
+    <div class="container">
+      <div class="demos-header">
+        <span class="section-label reveal">Casos reales</span>
+        <h2 class="section-title reveal stagger-1">Ejemplos de lo que construimos</h2>
+        <p class="section-sub reveal stagger-2">Sistemas funcionando hoy, no maquetas. Puedes probarlos tú mismo.</p>
+      </div>
+      <div class="demos-grid">
+        <article class="demo-card reveal stagger-1">
+          <div class="demo-shot"><img src="/assets/demo-chatbot.jpg" alt="El asistente de IA de RinoAI respondiendo a una clínica dental que pierde llamadas" width="1200" height="900" loading="lazy"></div>
+          <div class="demo-body">
+            <span class="demo-tag">Funcionando en esta web</span>
+            <h3>Asistente con IA que atiende tu web</h3>
+            <p><strong>El problema:</strong> visitas con dudas que se van sin escribir, sobre todo fuera de horario.</p>
+            <p><strong>Lo que hace:</strong> responde al momento con la información real del negocio, no inventa precios y lleva a la persona al contacto.</p>
+            <div class="demo-actions">
+              <button type="button" class="btn-primary demo-btn" data-open-chat>Pruébalo ahora</button>
+              <a href="/servicios/agentes-ia" class="demo-link">Ver servicio →</a>
+            </div>
+          </div>
+        </article>
+        <article class="demo-card reveal stagger-2">
+          <div class="demo-shot"><img src="/assets/demo-bcspeople.jpg" alt="Portada de la web de BCs People, consultoría de recursos humanos" width="1200" height="900" loading="lazy"></div>
+          <div class="demo-body">
+            <span class="demo-tag">Proyecto de cliente</span>
+            <h3>Web para BCs People, consultoría de RRHH</h3>
+            <p><strong>El reto:</strong> presentar más de 20 años de trayectoria en recursos humanos con una imagen a la altura y fácil de encontrar.</p>
+            <p><strong>Lo que hicimos:</strong> web a medida, rápida y adaptada al móvil, con aviso de cookies, páginas legales y preparada para buscadores y asistentes de IA.</p>
+            <div class="demo-actions">
+              <a href="https://bcspeople.netlify.app" class="btn-primary demo-btn" target="_blank" rel="noopener">Ver la web</a>
+              <a href="/servicios/creacion-de-webs-y-landing-pages" class="demo-link">Ver servicio →</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -2817,6 +2886,9 @@
 
     document.getElementById('cw-x').addEventListener('click', toggle);
     btn.addEventListener('click', toggle);
+    document.querySelectorAll('[data-open-chat]').forEach(b => b.addEventListener('click', () => {
+      if (!cw.classList.contains('open')) toggle();
+    }));
     snd.addEventListener('click', send);
     inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); send(); } });
   })();
