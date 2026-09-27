@@ -70,6 +70,17 @@ presupuesto real.
 Los mejores LLMs del mercado (OpenAI, Anthropic, Google), automatización con n8n
 y frameworks de agentes como LangChain y CrewAI.
 
+**¿Y si no funciona como esperaba?**
+Empezamos por un solo proceso, concreto y medible, y antes de arrancar acordamos
+cómo medir el resultado. Si no da el resultado acordado, no seguimos con más
+fases: no te atamos a un proyecto largo.
+
+**¿Qué pasa con los datos de mi empresa?**
+Los tratamos conforme al RGPD y firmamos un contrato de encargado del
+tratamiento. Usamos los modelos de IA a través de su API, cuyos proveedores no
+utilizan esos datos para entrenar sus modelos, y cuando el proyecto lo permite
+alojamos los datos en la UE. Cada integración accede solo a lo imprescindible.
+
 ## Contacto
 
 - Formulario: https://rinoai.es/#contacto

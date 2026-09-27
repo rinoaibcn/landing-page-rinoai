@@ -41,6 +41,8 @@
 - Se encarga de toda la parte técnica: arquitectura, desarrollo e integración. El cliente solo necesita conocer el proceso a automatizar.
 - Stack habitual: LLMs de OpenAI, Anthropic y Google; automatización con n8n; frameworks de agentes como LangChain y CrewAI.
 - La mayoría de proyectos entran en producción en 2 a 6 semanas.
+- Empieza por un solo proceso medible; si no da el resultado acordado, no se continúa con más fases.
+- Datos: tratamiento conforme al RGPD con contrato de encargado del tratamiento, modelos de IA usados por API (sin entrenar con los datos del cliente), datos en la UE cuando el proyecto lo permite y acceso mínimo por integración.
 
 ## Contacto
 

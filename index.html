@@ -199,6 +199,16 @@
         "@type": "Question",
         "name": "¿Qué herramientas y plataformas de IA utilizáis?",
         "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos con los mejores LLMs del mercado (OpenAI, Anthropic, Google), automatización con n8n, y frameworks de agentes como LangChain y CrewAI." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Y si no funciona como esperaba?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Empezamos por un solo proceso, concreto y medible, y antes de arrancar acordamos cómo medir el resultado. Si no da el resultado acordado, no seguimos con más fases: no te atamos a un proyecto largo." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa con los datos de mi empresa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Los tratamos conforme al RGPD y firmamos un contrato de encargado del tratamiento. Usamos los modelos de IA a través de su API, cuyos proveedores no utilizan esos datos para entrenar sus modelos, y cuando el proyecto lo permite alojamos los datos en la UE. Cada integración accede solo a lo imprescindible." }
       }
     ]
   }
@@ -1077,6 +1087,9 @@
       transition: color 0.2s;
     }
     .footer-legal-links a:hover { color: var(--text); }
+
+    .form-note { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 14px; line-height: 1.6; }
+    .form-note a { color: var(--accent2); }
 
     /* ── DEMOS ── */
     .demos-header { text-align: center; margin-bottom: 56px; }
@@ -2109,6 +2122,30 @@
           </div>
         </div>
 
+        <div class="faq-item reveal stagger-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a6">
+            ¿Y si no funciona como esperaba?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-a6" role="region">
+            <div class="faq-answer-inner">Empezamos por un solo proceso, concreto y medible, y antes de arrancar acordamos contigo cómo medir el resultado: horas ahorradas, errores, tiempo de respuesta. Si no da el resultado acordado, no seguimos con más fases. No te atamos a un proyecto largo.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal stagger-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a7">
+            ¿Qué pasa con los datos de mi empresa?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-a7" role="region">
+            <div class="faq-answer-inner">Los tratamos conforme al RGPD y firmamos contigo un contrato de encargado del tratamiento. Usamos los modelos de IA a través de su API, cuyos proveedores no utilizan esos datos para entrenar sus modelos, y cuando el proyecto lo permite alojamos los datos en la UE. Cada integración accede solo a lo imprescindible.</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -2212,6 +2249,7 @@
               Pedir llamada gratuita
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
+            <p class="form-note">Solo usamos tus datos para responderte, conforme al RGPD. No los cedemos a terceros. <a href="/politica-de-privacidad">Política de privacidad</a></p>
           </form>
         </div>
       </div>
