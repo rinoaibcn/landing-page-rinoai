@@ -2,7 +2,7 @@
 
 > RinoAI integra inteligencia artificial y automatizaciones en pymes de Barcelona
 > para reducir costes operativos y multiplicar la velocidad de ejecución. Trabaja
-> con equipos de 5 a 200 personas de cualquier sector y lleva las soluciones a
+> con equipos de hasta 50 personas de cualquier sector y lleva las soluciones a
 > producción en semanas, no en meses.
 
 ## Servicios

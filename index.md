@@ -1,7 +1,7 @@
 # RinoAI — IA y Automatizaciones para Empresas | Barcelona
 
 Tu equipo deja de copiar datos, contestar lo mismo y perseguir facturas.
-RinoAI automatiza con IA las tareas repetitivas de pymes de 5 a 200 personas,
+RinoAI automatiza con IA las tareas repetitivas de pymes de hasta 50 personas,
 con proyectos en producción en 2–6 semanas. Barcelona. La llamada inicial es
 gratuita.
 
@@ -54,8 +54,8 @@ siempre llevar la solución a producción en semanas, no en meses.
 
 **¿Para qué tipo de empresa trabajáis?**
 Pequeñas y medianas empresas (pymes) de cualquier sector. No necesitas un equipo
-técnico interno ni una infraestructura compleja. Trabajamos con equipos de 5 a
-200 personas.
+técnico interno ni una infraestructura compleja. Trabajamos con equipos de
+hasta 50 personas.
 
 **¿Necesito un equipo técnico?**
 No. Nos encargamos de toda la parte técnica: arquitectura, desarrollo e
