@@ -7,7 +7,7 @@
 
 ## Servicios
 
-- [Automatización de procesos](https://rinoai.es/servicios/automatizacion-de-procesos): eliminamos tareas manuales y repetitivas en administración, ventas, operaciones y atención al cliente con IA y herramientas de automatización (Make, n8n, Zapier).
+- [Automatización de procesos](https://rinoai.es/servicios/automatizacion-de-procesos): eliminamos tareas manuales y repetitivas en administración, ventas, operaciones y atención al cliente con IA y herramientas de automatización como n8n.
 - [Chatbots y agentes de IA](https://rinoai.es/servicios/agentes-ia): agentes que interpretan, consultan tus datos y toman decisiones autónomas dentro de tus procesos y SOP, integrados con tus herramientas.
 - [Desarrollo estratégico de IA](https://rinoai.es/servicios/desarrollo-estrategico-ia): análisis de la operativa, identificación de dónde la IA genera más impacto y hoja de ruta de implementación priorizada.
 - [Visibilidad en IA y buscadores (AEO)](https://rinoai.es/servicios/visibilidad-en-ia-aeo): auditoría y optimización de la web para que ChatGPT, Perplexity, Google AI Overviews y los agentes de IA la detecten y la citen (datos estructurados, robots.txt, llms.txt, estándares para agentes).
@@ -39,7 +39,7 @@
 
 - Empieza siempre con un diagnóstico para identificar el punto de mayor impacto.
 - Se encarga de toda la parte técnica: arquitectura, desarrollo e integración. El cliente solo necesita conocer el proceso a automatizar.
-- Stack habitual: LLMs de OpenAI, Anthropic y Google; automatización con Make, n8n y Zapier; frameworks de agentes como LangChain y CrewAI.
+- Stack habitual: LLMs de OpenAI, Anthropic y Google; automatización con n8n; frameworks de agentes como LangChain y CrewAI.
 - La mayoría de proyectos entran en producción en 2 a 6 semanas.
 
 ## Contacto

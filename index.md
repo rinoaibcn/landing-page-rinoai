@@ -67,9 +67,8 @@ identificar el punto de mayor impacto y presentar una propuesta ajustada a tu
 presupuesto real.
 
 **¿Con qué tecnología trabajáis?**
-Los mejores LLMs del mercado (OpenAI, Anthropic, Google), herramientas de
-automatización como Make, n8n y Zapier, y frameworks de agentes como LangChain y
-CrewAI.
+Los mejores LLMs del mercado (OpenAI, Anthropic, Google), automatización con n8n
+y frameworks de agentes como LangChain y CrewAI.
 
 ## Contacto
 
