@@ -85,6 +85,15 @@ main li{margin-bottom:8px}
 .btn-ghost{border-color:var(--border);color:var(--text)}
 .btn-ghost:hover{border-color:var(--accent2);color:var(--text)}
 
+/* Detalle técnico en páginas de servicio */
+.tech-box{margin-top:44px;padding:28px 30px;border:1px solid var(--border);border-radius:16px;background:linear-gradient(135deg,rgba(108,99,255,.08),rgba(56,189,248,.03))}
+.tech-box .eyebrow{margin-bottom:6px}
+main .tech-box h2{margin-top:0}
+.tech-box ul{margin-bottom:0}
+main .tech-box + h2{margin-top:44px}
+.tech-box li{font-size:15px}
+@media(max-width:600px){.tech-box{padding:22px 18px}}
+
 /* Banda CTA */
 .cta-band{margin:40px 0;padding:34px;border:1px solid var(--border);border-radius:16px;
   background:linear-gradient(135deg,rgba(108,99,255,.12),rgba(56,189,248,.06));text-align:center}

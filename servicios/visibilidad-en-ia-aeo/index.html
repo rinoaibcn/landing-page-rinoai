@@ -100,15 +100,25 @@
     <p>AEO son las siglas de <em>Answer Engine Optimization</em>: optimizar una web para los <strong>motores de respuesta con IA</strong> (ChatGPT, Perplexity, Google AI Overviews, Copilot) y para los agentes autónomos que navegan por ti. Es el equivalente del SEO, pero para cuando la respuesta la da una IA y no una lista de enlaces azules.</p>
     <p>Una web puede posicionar bien en Google y aun así ser invisible para estos sistemas, porque no publican las señales que ellos leen.</p>
 
-    <h2>Qué revisamos y aplicamos</h2>
+    <h2>Qué revisamos y mejoramos</h2>
     <ul>
-      <li><strong>Datos estructurados (JSON-LD):</strong> que la IA entienda qué es tu negocio, tus servicios, tus FAQ y tu contacto.</li>
-      <li><strong>Contenido citable:</strong> respuestas directas y bien delimitadas, en vez de párrafos comerciales largos.</li>
-      <li><strong>robots.txt y reglas para bots de IA:</strong> permitir el acceso a GPTBot, ClaudeBot, PerplexityBot, Google-Extended… y declarar tus <em>Content Signals</em>.</li>
-      <li><strong>llms.txt y versión Markdown:</strong> un resumen limpio de tu sitio pensado para modelos de lenguaje.</li>
-      <li><strong>Descubribilidad:</strong> sitemap correcto, cabeceras <code>Link</code>, catálogo de API si tienes servicios expuestos.</li>
-      <li><strong>Estándares para agentes:</strong> MCP, WebMCP, Agent Cards y manifiestos, cuando tiene sentido para tu caso.</li>
+      <li><strong>Que la IA entienda tu negocio:</strong> qué haces, qué servicios ofreces, dónde estás y cómo contactarte, explicado de forma que un asistente lo lea sin dudas.</li>
+      <li><strong>Textos que se puedan citar:</strong> respuestas claras a las preguntas de tus clientes, en vez de párrafos comerciales largos.</li>
+      <li><strong>Que los asistentes puedan entrar:</strong> muchas webs bloquean sin saberlo a ChatGPT y compañía. Lo revisamos y lo corregimos.</li>
+      <li><strong>Un resumen pensado para la IA:</strong> una versión limpia de tu web para que los asistentes la lean rápido y sin errores.</li>
     </ul>
+
+    <div class="tech-box">
+      <span class="eyebrow">Para perfiles técnicos</span>
+      <h2>Cómo lo hacemos por dentro</h2>
+      <ul>
+        <li><strong>Datos estructurados JSON-LD:</strong> Organization, LocalBusiness, Service, FAQPage y Person, validados.</li>
+        <li><strong>robots.txt y bots de IA:</strong> reglas para GPTBot, ClaudeBot, PerplexityBot, Google-Extended… y declaración de <em>Content Signals</em>.</li>
+        <li><strong>llms.txt y versión Markdown:</strong> servida por negociación de contenido (<code>Accept: text/markdown</code>).</li>
+        <li><strong>Descubribilidad:</strong> sitemap, cabeceras <code>Link</code> (RFC 8288) y catálogo de API si expones servicios.</li>
+        <li><strong>Estándares para agentes:</strong> MCP, WebMCP, Agent Cards y manifiestos, cuando tiene sentido para tu caso.</li>
+      </ul>
+    </div>
 
     <h2>Qué entregamos</h2>
     <ol>
