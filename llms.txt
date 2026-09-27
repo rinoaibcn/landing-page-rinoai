@@ -25,6 +25,11 @@
 - [Por qué tu web no aparece en ChatGPT y cómo solucionarlo](https://www.youtube.com/watch?v=VPGNxkN0DUE): explicación en vídeo del AEO y de los cambios que hacen que los asistentes de IA citen una web.
 - [Canal de YouTube de RinoAI](https://www.youtube.com/@mauro.gutierrez)
 
+## Quién está detrás
+
+- Mauro Gutiérrez Clemente, cofundador. Técnico Superior en Administración de Sistemas Informáticos en Red con especialización en ciberseguridad; ha desarrollado proyectos de IA en Grupo Vagindauto (automatización, análisis de datos y optimización de procesos) y se ha formado como experto en IA generativa y automatización en UDIA-ESIC. [LinkedIn](https://www.linkedin.com/in/maurogutierrezclemente/) · [YouTube](https://www.youtube.com/@mauro.gutierrez)
+- Los clientes trabajan directamente con los fundadores, desde la primera llamada hasta la puesta en producción.
+
 ## Cómo trabaja RinoAI
 
 - Empieza siempre con un diagnóstico para identificar el punto de mayor impacto.

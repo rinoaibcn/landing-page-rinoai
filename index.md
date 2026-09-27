@@ -28,6 +28,16 @@ Diseñamos y desarrollamos webs corporativas y landing pages a medida, rápidas 
 adaptadas al móvil, con formulario conectado a tu email, WhatsApp y aviso de
 cookies, y preparadas desde el primer día para Google y para ChatGPT.
 
+## Quién está detrás
+Mauro Gutiérrez Clemente, cofundador de RinoAI. Técnico Superior en
+Administración de Sistemas Informáticos en Red con especialización en
+ciberseguridad. Ha desarrollado proyectos de IA en Grupo Vagindauto
+(automatización, análisis de datos y optimización de procesos) y se ha formado
+como experto en IA generativa y automatización en UDIA-ESIC. Trabajas
+directamente con los fundadores, desde la primera llamada hasta la puesta en
+producción.
+LinkedIn: https://www.linkedin.com/in/maurogutierrezclemente/
+
 ## Vídeo: ¿Por qué tu web no aparece en ChatGPT?
 Explicamos por qué muchas webs son invisibles para ChatGPT y otros asistentes de
 IA, y qué hay que cambiar para que empiecen a citarlas:

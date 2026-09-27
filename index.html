@@ -98,7 +98,18 @@
       "https://www.linkedin.com/in/maurogutierrezclemente/",
       "https://www.youtube.com/@mauro.gutierrez"
     ],
-    "knowsAbout": ["Inteligencia Artificial", "Automatización de Procesos", "Agentes IA", "RPA", "Machine Learning"]
+    "knowsAbout": ["Inteligencia Artificial", "Automatización de Procesos", "Agentes IA", "RPA", "Machine Learning"],
+    "founder": {
+      "@type": "Person",
+      "name": "Mauro Gutiérrez Clemente",
+      "jobTitle": "Cofundador",
+      "image": "https://rinoai.es/assets/mauro-gutierrez.jpg",
+      "knowsAbout": ["Inteligencia Artificial", "Automatización de Procesos", "Ciberseguridad", "n8n"],
+      "sameAs": [
+        "https://www.linkedin.com/in/maurogutierrezclemente/",
+        "https://www.youtube.com/@mauro.gutierrez"
+      ]
+    }
   }
   </script>
 
@@ -1055,6 +1066,30 @@
     }
     .footer-legal-links a:hover { color: var(--text); }
 
+    /* ── TEAM ── */
+    .team-header { text-align: center; margin-bottom: 56px; }
+    .team-header .section-label { padding-left: 0; }
+    .team-header .section-label::before { display: none; }
+    .team-header .section-sub { margin: 0 auto; }
+    .team-grid { display: grid; gap: 24px; max-width: 940px; margin: 0 auto; }
+    .team-card { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: center; background: var(--card-bg); border: 1px solid var(--border); border-radius: 22px; padding: 36px; }
+    .team-photo { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 18px; border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 40px rgba(108,99,255,0.15); }
+    .team-body h3 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em; }
+    .team-role { color: var(--accent2); font-size: 0.9rem; font-weight: 600; margin: 6px 0 18px; }
+    .team-body p { color: var(--text-muted); font-size: 0.97rem; line-height: 1.75; margin-bottom: 12px; }
+    .team-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 22px; }
+    .team-tags li { font-size: 0.78rem; color: var(--text); border: 1px solid var(--border); background: rgba(108,99,255,0.08); border-radius: 999px; padding: 5px 12px; }
+    .team-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .team-link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 8px; border: 1px solid var(--border); color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: border-color 0.25s, background 0.25s; }
+    .team-link:hover { border-color: var(--accent); background: rgba(108,99,255,0.08); }
+    .team-link svg { width: 16px; height: 16px; fill: var(--accent2); }
+    @media (max-width: 760px) {
+      .team-card { grid-template-columns: 1fr; gap: 24px; padding: 24px 20px; }
+      .team-photo { max-width: 220px; margin: 0 auto; }
+      .team-body h3, .team-role { text-align: center; }
+      .team-links { justify-content: center; }
+    }
+
     /* ── VIDEO ── */
     .video-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 64px; align-items: center; }
     .video-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
@@ -1748,6 +1783,43 @@
 
   <div class="section-divider"></div>
 
+  <!-- ── TEAM ── -->
+  <section class="team" id="equipo">
+    <div class="container">
+      <div class="team-header">
+        <span class="section-label reveal">Quién está detrás</span>
+        <h2 class="section-title reveal stagger-1">Hablas con quien construye tu solución</h2>
+        <p class="section-sub reveal stagger-2">RinoAI es una consultora pequeña a propósito: trabajas directamente con los fundadores, desde la primera llamada hasta que el sistema está funcionando.</p>
+      </div>
+      <div class="team-grid">
+        <article class="team-card reveal stagger-2">
+          <img class="team-photo" src="/assets/mauro-gutierrez.jpg" alt="Mauro Gutiérrez Clemente, cofundador de RinoAI" width="640" height="640" loading="lazy">
+          <div class="team-body">
+            <h3>Mauro Gutiérrez Clemente</h3>
+            <div class="team-role">Cofundador · IA, automatización y ciberseguridad</div>
+            <p>Técnico Superior en Administración de Sistemas Informáticos en Red, especializado en ciberseguridad. Ha desarrollado proyectos de IA en Grupo Vagindauto (automatización, análisis de datos y optimización de procesos) y se ha formado como experto en IA generativa y automatización en UDIA-ESIC.</p>
+            <p>Su base en ciberseguridad marca cómo trabajamos: cada integración se diseña cuidando quién accede a tus datos y cómo. En su canal de YouTube explica de forma práctica cómo aplicar la IA en un negocio.</p>
+            <ul class="team-tags" aria-label="Herramientas">
+              <li>n8n</li><li>Claude Code</li><li>MCP</li><li>Airtable</li><li>Linux y VPS</li>
+            </ul>
+            <div class="team-links">
+              <a href="https://www.linkedin.com/in/maurogutierrezclemente/" target="_blank" rel="noopener" class="team-link">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://www.youtube.com/@mauro.gutierrez" target="_blank" rel="noopener" class="team-link">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+                YouTube
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- ── SERVICES ── -->
   <section class="services" id="servicios">
     <div class="container">
@@ -2102,6 +2174,7 @@
         <ul>
           <li><a href="mailto:rinoai.bcn@gmail.com">rinoai.bcn@gmail.com</a></li>
           <li><a href="#contacto">Formulario de contacto</a></li>
+          <li><a href="https://www.linkedin.com/in/maurogutierrezclemente/" target="_blank" rel="noopener">LinkedIn</a></li>
           <li><a href="https://www.youtube.com/@mauro.gutierrez" target="_blank" rel="noopener">YouTube</a></li>
         </ul>
       </div>
