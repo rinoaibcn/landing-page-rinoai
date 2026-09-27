@@ -29,11 +29,11 @@ adaptadas al móvil, con formulario conectado a tu email, WhatsApp y aviso de
 cookies, y preparadas desde el primer día para Google y para ChatGPT.
 
 ## Quién está detrás
-Mauro Gutiérrez Clemente, cofundador de RinoAI. Técnico Superior en
-Administración de Sistemas Informáticos en Red con especialización en
-ciberseguridad. Ha desarrollado proyectos de IA en Grupo Vagindauto
-(automatización, análisis de datos y optimización de procesos) y se ha formado
-como experto en IA generativa y automatización en UDIA-ESIC. Trabajas
+Mauro Gutiérrez Clemente, cofundador de RinoAI. Especialista en sistemas y
+ciberseguridad, centrado en aplicar la IA a la operativa de las empresas. Ha
+desarrollado proyectos de automatización, análisis de datos y optimización de
+procesos con IA en entornos empresariales reales y tiene formación específica
+en IA generativa y automatización. Trabajas
 directamente con los fundadores, desde la primera llamada hasta la puesta en
 producción.
 LinkedIn: https://www.linkedin.com/in/maurogutierrezclemente/
