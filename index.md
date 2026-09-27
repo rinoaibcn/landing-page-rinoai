@@ -1,8 +1,9 @@
 # RinoAI — IA y Automatizaciones para Empresas | Barcelona
 
-RinoAI integra inteligencia artificial y automatizaciones para reducir costes
-operativos y multiplicar la velocidad de tu empresa. Especialistas en pymes.
-Barcelona.
+Tu equipo deja de copiar datos, contestar lo mismo y perseguir facturas.
+RinoAI automatiza con IA las tareas repetitivas de pymes de 5 a 200 personas,
+con proyectos en producción en 2–6 semanas. Barcelona. La llamada inicial es
+gratuita.
 
 ## Servicios
 

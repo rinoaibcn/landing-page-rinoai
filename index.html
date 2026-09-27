@@ -449,13 +449,24 @@
       0%, 100% { opacity: 1; box-shadow: 0 0 10px var(--accent); }
       50% { opacity: 0.4; box-shadow: 0 0 4px var(--accent); }
     }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 22px;
+      animation: heroIn 0.7s cubic-bezier(0.4,0,0.2,1) 0.15s both;
+    }
     .hero h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+      font-size: clamp(2.4rem, 5vw, 4.1rem);
       font-weight: 700;
-      line-height: 1.08;
+      line-height: 1.1;
       letter-spacing: -0.025em;
-      margin-bottom: 24px;
+      max-width: 17ch;
+      margin: 0 auto 24px;
     }
     .hero h1 .gradient-text {
       background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 45%, var(--accent3) 100%);
@@ -1252,7 +1263,7 @@
       .reveal, .reveal-left, .reveal-right, .reveal-scale {
         transition: none !important; opacity: 1; transform: none;
       }
-      .hero h1, .hero p, .hero-actions { animation: none; opacity: 1; }
+      .hero h1, .hero p, .hero-actions, .hero-eyebrow { animation: none; opacity: 1; }
       .tech-item { animation: none; }
     }
 
@@ -1716,17 +1727,16 @@
           <circle cx="84" cy="94" r="6" fill="#050508" stroke="#38bdf8" stroke-width="2.2"/><circle cx="84" cy="94" r="2.5" fill="#38bdf8"/>
         </svg>
       </div>
+      <span class="hero-eyebrow">Automatización e IA para pymes · Barcelona</span>
       <h1>
-        Automatización e<br />
-        <span class="gradient-text">Inteligencia Artificial</span><br />
-        para tu empresa.
+        Tu equipo deja de <span class="gradient-text">copiar datos, contestar lo mismo y perseguir facturas.</span>
       </h1>
       <p>
-        Integramos sistemas de IA y automatizaciones de primer nivel para reducir el coste operativo y multiplicar la velocidad de ejecución en cualquier departamento de tu empresa.
+        Automatizamos con IA las tareas repetitivas de pymes de 5 a 200 personas. En producción en <span style="white-space:nowrap">2–6 semanas</span>.
       </p>
       <div class="hero-actions">
         <a href="#contacto" class="btn-primary">
-          Hablemos de tu proyecto
+          Pide tu llamada gratuita
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
         <a href="#servicios" class="btn-ghost">
