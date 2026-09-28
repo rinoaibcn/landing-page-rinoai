@@ -260,15 +260,13 @@
       --text-muted: #8888aa;
       --border: rgba(108, 99, 255, 0.18);
       --card-bg: rgba(255,255,255,0.03);
-      --veil: rgba(6,6,9,0.55);
-      --veil-2: rgba(11,11,17,0.55);
     }
 
     html { scroll-behavior: smooth; overflow-x: hidden; overflow-x: clip; }
     section[id] { scroll-margin-top: 80px; }
 
     body {
-      background: url('/assets/textura.svg') top center / 900px repeat, var(--bg);
+      background: var(--bg);
       color: var(--text);
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
@@ -423,19 +421,13 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(to bottom, transparent 70%, var(--veil) 100%),
+        linear-gradient(to bottom, transparent 78%, var(--bg) 100%),
+        radial-gradient(ellipse 120% 90% at 50% 45%, transparent 45%, rgba(0,0,0,0.75) 100%),
         radial-gradient(ellipse 70% 50% at 50% -5%, rgba(108,99,255,0.16) 0%, transparent 65%),
         radial-gradient(ellipse 45% 35% at 85% 90%, rgba(56,189,248,0.06) 0%, transparent 60%),
-        transparent;
+        url('/assets/textura.svg') center / 900px repeat,
+        var(--bg);
       z-index: 0;
-    }
-    .hero-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 120% 90% at 50% 45%, transparent 45%, rgba(0,0,0,0.75) 100%);
-      -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 95%);
-      mask-image: linear-gradient(to bottom, black 55%, transparent 95%);
     }
     /* Particles canvas */
     #particles { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
@@ -573,7 +565,7 @@
     }
 
     /* ── ABOUT ── */
-    .about { background: var(--veil-2); position: relative; overflow: hidden; }
+    .about { background: var(--bg2); position: relative; overflow: hidden; }
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -673,8 +665,7 @@
     .tech-icon svg { width: 22px; height: 22px; stroke: var(--accent2); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
     /* ── SERVICES ── */
-    .services { background: var(--veil); }
-    .team, .demos, .video { background: var(--veil); }
+    .services { background: var(--bg); }
     .services-header { text-align: center; margin-bottom: 64px; }
     .services-header .section-label { padding-left: 0; }
     .services-header .section-label::before { display: none; }
@@ -780,7 +771,7 @@
     .service-link:hover { gap: 10px; }
 
     /* ── PROCESS ── */
-    .process { background: var(--veil-2); }
+    .process { background: var(--bg2); }
     .process-header { text-align: center; margin-bottom: 72px; }
     .process-header .section-label { padding-left: 0; }
     .process-header .section-label::before { display: none; }
@@ -844,7 +835,7 @@
 
     /* ── CTA BANNER ── */
     .cta-banner {
-      background: var(--veil);
+      background: var(--bg);
       padding: 0 40px 110px;
     }
     .cta-banner-inner {
@@ -895,7 +886,7 @@
     .cta-banner-action { flex-shrink: 0; position: relative; z-index: 1; }
 
     /* ── CONTACT ── */
-    .contact { background: var(--veil-2); }
+    .contact { background: var(--bg2); }
     .contact-inner {
       display: grid;
       grid-template-columns: 1fr 1.3fr;
@@ -1025,7 +1016,7 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--veil);
+      background: var(--bg);
       border-top: 1px solid var(--border);
     }
     .footer-top {
@@ -1577,7 +1568,7 @@
     }
 
     /* ── FAQ ── */
-    .faq { background: var(--veil-2); }
+    .faq { background: var(--bg2); }
     .faq-header { text-align: center; margin-bottom: 56px; }
     .faq-header .section-label { padding-left: 0; }
     .faq-header .section-label::before { display: none; }
