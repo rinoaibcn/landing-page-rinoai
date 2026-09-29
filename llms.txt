@@ -28,7 +28,7 @@
 ## Ejemplos de lo que construimos
 
 - Asistente con IA de rinoai.es: responde a los visitantes con la información real de RinoAI, sin inventar precios, y los lleva al contacto. Se puede probar en la propia web.
-- [Web de BCs People](https://bcspeople.netlify.app): web a medida para una consultoría de recursos humanos, adaptada al móvil y preparada para buscadores y asistentes de IA.
+- [Web de BCs People](https://bcspeople.com): web a medida para una consultoría de recursos humanos, adaptada al móvil y preparada para buscadores y asistentes de IA.
 
 ## Quién está detrás
 
