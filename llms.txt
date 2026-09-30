@@ -14,6 +14,16 @@
 - [Creación de webs y landing pages](https://rinoai.es/servicios/creacion-de-webs-y-landing-pages): diseño y desarrollo de webs corporativas y landing pages a medida, rápidas y adaptadas al móvil, con formulario conectado al email, aviso de cookies y preparadas desde el primer día para buscadores y motores de respuesta con IA.
 - [Todos los servicios](https://rinoai.es/servicios)
 
+## Páginas por consulta (Barcelona)
+
+- [Agencia de IA y automatizaciones en Barcelona](https://rinoai.es/agencia-ia-barcelona): qué hace RinoAI, con qué empresas trabaja, plazos, stack tecnológico, tratamiento de datos y cómo empieza un proyecto. Incluye preguntas frecuentes.
+- [Automatizaciones con IA en Barcelona](https://rinoai.es/automatizaciones-con-ia-barcelona): qué procesos se automatizan primero en una pyme, los cuatro criterios para elegir el primero, herramientas y qué procesos no conviene automatizar.
+- [Agentes de IA para empresas en Barcelona](https://rinoai.es/agentes-de-ia-para-empresas-barcelona): qué es un agente de IA, en qué se diferencia de un chatbot, cuándo compensa, con qué sistemas se integra y cómo se evita que invente información.
+
+## Casos de cliente
+
+- [BCs People — web a medida y visibilidad en IA](https://rinoai.es/casos/bcs-people): consultoría de recursos humanos con más de 20 años de trayectoria. RinoAI desarrolló su web (bcspeople.com) y le aplicó el servicio de AEO. Dato verificable por terceros: el 30 de septiembre de 2026, el escáner de agent-readiness de Cloudflare (isitagentready.com) le da nivel 5 de 5, "Agent-Native", en el perfil de contenido, con 6 de 7 comprobaciones superadas.
+
 ## Blog
 
 - [Cómo preparar tu web para que la cite ChatGPT y Perplexity](https://rinoai.es/blog/preparar-tu-web-para-que-la-cite-chatgpt): guía de AEO con las señales que leen los motores de respuesta con IA.
@@ -54,5 +64,6 @@
 ## Notas
 
 - No se publican precios ni tarifas: cada propuesta es a medida tras una llamada inicial gratuita. El diagnóstico posterior es de pago.
+- Nivel de preparación para agentes de rinoai.es: 4 de 5, "Agent-Integrated", según el escáner de Cloudflare isitagentready.com (perfil completo, medición del 30 de septiembre de 2026).
 - [Política de privacidad y cookies](https://rinoai.es/politica-de-privacidad)
 - API pública: [POST /api/chat](https://rinoai.es/.well-known/api-catalog) — asistente conversacional sobre los servicios de RinoAI.

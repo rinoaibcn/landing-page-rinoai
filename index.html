@@ -42,13 +42,7 @@
       "@type": "PostalAddress",
       "addressLocality": "Barcelona",
       "addressRegion": "Cataluña",
-      "postalCode": "08001",
       "addressCountry": "ES"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.3851,
-      "longitude": 2.1734
     },
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
@@ -56,12 +50,11 @@
       "opens": "09:00",
       "closes": "18:00"
     }],
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 41.3851, "longitude": 2.1734},
-      "geoRadius": "100000"
-    },
-    "priceRange": "€€",
+    "areaServed": [
+      {"@type": "City", "name": "Barcelona"},
+      {"@type": "AdministrativeArea", "name": "Cataluña"},
+      {"@type": "Country", "name": "España"}
+    ],
     "telephone": "+34683327908",
     "sameAs": [
       "https://www.linkedin.com/in/maurogutierrezclemente/",
@@ -1024,7 +1017,7 @@
       margin: 0 auto;
       padding: 64px 40px 48px;
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
       gap: 48px;
     }
     .footer-brand {}
@@ -1970,7 +1963,7 @@
             <p><strong>Lo que hicimos:</strong> web a medida, rápida y adaptada al móvil, con aviso de cookies y páginas legales. Además, le aplicamos nuestro servicio de <a href="/servicios/visibilidad-en-ia-aeo">visibilidad en IA y buscadores (AEO)</a> para que Google, ChatGPT y otros asistentes entiendan su negocio y puedan recomendarlo.</p>
             <div class="demo-actions">
               <a href="https://bcspeople.com" class="btn-primary demo-btn" target="_blank" rel="noopener">Ver la web</a>
-              <a href="/servicios/creacion-de-webs-y-landing-pages" class="demo-link">Ver servicio →</a>
+              <a href="/casos/bcs-people" class="demo-link">Ver el caso →</a>
             </div>
           </div>
         </article>
@@ -2288,6 +2281,15 @@
           <li><a href="/blog">Blog</a></li>
           <li><a href="#proceso">Proceso</a></li>
           <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Barcelona</div>
+        <ul>
+          <li><a href="/agencia-ia-barcelona">Agencia de IA en Barcelona</a></li>
+          <li><a href="/automatizaciones-con-ia-barcelona">Automatizaciones con IA</a></li>
+          <li><a href="/agentes-de-ia-para-empresas-barcelona">Agentes de IA para empresas</a></li>
+          <li><a href="/casos/bcs-people">Caso: BCs People</a></li>
         </ul>
       </div>
       <div class="footer-col">

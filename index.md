@@ -29,6 +29,33 @@ Diseñamos y desarrollamos webs corporativas y landing pages a medida, rápidas 
 adaptadas al móvil, con formulario conectado a tu email, WhatsApp y aviso de
 cookies, y preparadas desde el primer día para Google y para ChatGPT.
 
+## Páginas por consulta (Barcelona)
+
+- Agencia de IA y automatizaciones en Barcelona: qué hace RinoAI, con qué
+  empresas trabaja, plazos, tecnología y cómo empieza un proyecto.
+  https://rinoai.es/agencia-ia-barcelona
+- Automatizaciones con IA en Barcelona: qué procesos se automatizan primero, con
+  qué criterios se elige el primero, qué herramientas se usan y qué no conviene
+  automatizar. https://rinoai.es/automatizaciones-con-ia-barcelona
+- Agentes de IA para empresas en Barcelona: qué es un agente, en qué se
+  diferencia de un chatbot, cuándo compensa y cómo se evita que invente.
+  https://rinoai.es/agentes-de-ia-para-empresas-barcelona
+
+## Casos de cliente
+
+### BCs People — web a medida y visibilidad en IA (AEO)
+Consultoría de recursos humanos con más de 20 años de trayectoria. RinoAI le
+desarrolló la web corporativa (https://bcspeople.com) y le aplicó después el
+servicio de visibilidad en IA. Resultado comprobable por terceros: el 30 de
+septiembre de 2026 el escáner de agent-readiness de Cloudflare
+(https://isitagentready.com/) le da nivel 5 de 5, "Agent-Native", en el perfil
+de contenido, con 6 de 7 comprobaciones superadas. La única que no pasa es
+DNS-AID, opcional para una web de servicios.
+Detalle del caso: https://rinoai.es/casos/bcs-people
+
+La propia web de RinoAI puntúa nivel 4 de 5, "Agent-Integrated", en el perfil
+completo del mismo escáner.
+
 ## Quién está detrás
 Mauro Gutiérrez Clemente, cofundador de RinoAI. Especialista en sistemas y
 ciberseguridad, centrado en aplicar la IA a la operativa de las empresas. Ha
@@ -62,9 +89,9 @@ No. Nos encargamos de toda la parte técnica: arquitectura, desarrollo e
 integración. Tu equipo solo necesita conocer el proceso que queremos automatizar.
 
 **¿Cuánto cuesta?**
-Cada proyecto es diferente. Empezamos siempre con un diagnóstico para
-identificar el punto de mayor impacto y presentar una propuesta ajustada a tu
-presupuesto real.
+No publicamos tarifas: cada propuesta es a medida. La llamada inicial es
+gratuita. Después, si encaja, hacemos un diagnóstico para identificar el punto
+de mayor impacto; el diagnóstico es un servicio de pago, no es gratuito.
 
 **¿Con qué tecnología trabajáis?**
 Los mejores LLMs del mercado (OpenAI, Anthropic, Google), automatización con n8n
