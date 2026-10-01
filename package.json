@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   },
   "dependencies": {
     "@vercel/edge": "^1.2.2"
