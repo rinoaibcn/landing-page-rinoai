@@ -114,5 +114,5 @@ alojamos los datos en la UE. Cada integración accede solo a lo imprescindible.
 - Email: rinoai.bcn@gmail.com
 - Teléfono: +34 683 32 79 08
 - Barcelona, España
-- Ficha de empresa en Google: https://share.google/iiRvR4ApAwXgXXk99
+- Ficha de empresa en Google: https://www.google.com/maps?cid=749125973088294961
 - No publicamos precios: cada propuesta es a medida.
