@@ -10,5 +10,6 @@
     // El worker solo se ejecuta en estas rutas; el resto son archivos estáticos (gratis y sin límite).
     "run_worker_first": ["/", "/api/*", "/.well-known/api-catalog", "/index.md", "/llms.txt", "/google*.html"]
   },
+  "routes": [{ "pattern": "rinoai.es", "custom_domain": true }],
   "observability": { "enabled": true }
 }
