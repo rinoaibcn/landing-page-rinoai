@@ -1076,6 +1076,7 @@
     }
     .footer-legal-links a:hover { color: var(--text); }
 
+    .form-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
     .form-note { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 14px; line-height: 1.6; }
     .form-note a { color: var(--accent2); }
 
@@ -2275,6 +2276,10 @@
           <h3 class="form-title">Pide tu llamada gratuita</h3>
           <p class="form-subtitle">Déjanos tus datos y te escribimos en menos de 24 h para agendarla.</p>
           <form onsubmit="handleSubmit(event)">
+            <div class="form-hp" aria-hidden="true">
+              <label for="f-website">No rellenes este campo</label>
+              <input id="f-website" type="text" name="website" tabindex="-1" autocomplete="off" />
+            </div>
             <div class="form-row">
               <div class="form-group">
                 <label for="f-nombre">Nombre</label>
@@ -2840,10 +2845,10 @@
       btn.disabled = true;
 
       try {
-        const res = await fetch('https://formspree.io/f/mredaelb', {
+        const res = await fetch('/api/contact', {
           method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(form)
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(form)))
         });
 
         if (res.ok) {

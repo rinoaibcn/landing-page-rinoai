@@ -46,17 +46,27 @@ REGLAS:
 - No menciones a otras empresas ni competidores.
 - Si el usuario muestra interés real, invítale a pedir la llamada inicial gratuita por el formulario o por WhatsApp.`;
 
-module.exports = async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+};
 
-  if (req.method === 'OPTIONS') return res.status(200).end();
-  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+const json = (data, status = 200) =>
+  new Response(JSON.stringify(data), { status, headers: { ...CORS, 'Content-Type': 'application/json; charset=utf-8' } });
 
-  const { messages } = req.body || {};
+export async function handleChat(request, env) {
+  if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
+  if (request.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
+
+  let messages;
+  try {
+    ({ messages } = await request.json());
+  } catch {
+    return json({ error: 'Invalid request' }, 400);
+  }
   if (!Array.isArray(messages) || messages.length === 0) {
-    return res.status(400).json({ error: 'Invalid request' });
+    return json({ error: 'Invalid request' }, 400);
   }
 
   try {
@@ -64,7 +74,7 @@ module.exports = async function handler(req, res) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        Authorization: `Bearer ${env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
         model: 'gpt-4o',
@@ -77,9 +87,9 @@ module.exports = async function handler(req, res) {
     if (!response.ok) throw new Error(`OpenAI ${response.status}`);
 
     const data = await response.json();
-    return res.status(200).json({ reply: data.choices[0].message.content.trim() });
+    return json({ reply: data.choices[0].message.content.trim() });
   } catch (err) {
     console.error('Chat error:', err.message);
-    return res.status(500).json({ error: 'Error al procesar tu mensaje.' });
+    return json({ error: 'Error al procesar tu mensaje.' }, 500);
   }
-};
+}

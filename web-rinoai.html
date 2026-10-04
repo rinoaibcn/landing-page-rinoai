@@ -2397,9 +2397,10 @@
         const data = Object.fromEntries(new FormData(form));
         if (!data.servicio) data.servicio = 'No especificado';
 
-        const res = await fetch('https://formspree.io/f/mredaelb', {
+        data['¿Qué necesitas?'] = data.servicio;
+        const res = await fetch('/api/contact', {
           method: 'POST',
-          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         });
 
