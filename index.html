@@ -2404,7 +2404,7 @@
       <div class="privacy-hero-content">
         <div class="privacy-label">Legal</div>
         <h2>Política de Privacidad</h2>
-        <p>Última actualización: 8 de septiembre de 2026 · Responsable: RinoAI · Aplicable en España y la Unión Europea</p>
+        <p>Última actualización: 4 de octubre de 2026 · Responsable: RinoAI · Aplicable en España y la Unión Europea</p>
       </div>
     </div>
 
@@ -2490,8 +2490,8 @@
               <tr><th>Proveedor</th><th>Finalidad</th><th>Ubicación</th></tr>
             </thead>
             <tbody>
-              <tr><td>Vercel Inc.</td><td>Alojamiento del sitio web</td><td>EE. UU. (CCT / DPF)</td></tr>
-              <tr><td>Formspree, Inc.</td><td>Gestión del formulario de contacto</td><td>EE. UU. (CCT / DPF)</td></tr>
+              <tr><td>Cloudflare, Inc.</td><td>Alojamiento del sitio web y procesamiento del asistente de chat y del formulario</td><td>EE. UU. (CCT / DPF)</td></tr>
+              <tr><td>Resend</td><td>Envío por email de los mensajes del formulario de contacto</td><td>EE. UU. (CCT)</td></tr>
               <tr><td>Google Ireland Ltd. / Google LLC</td><td>Analítica web (Google Analytics 4), solo si aceptas las cookies; correo electrónico</td><td>UE / EE. UU. (DPF)</td></tr>
               <tr><td>OpenAI, L.L.C.</td><td>Procesamiento de los mensajes enviados al asistente de chat de la web</td><td>EE. UU. (CCT)</td></tr>
             </tbody>
@@ -2834,7 +2834,7 @@
       });
     })();
 
-    // ── Form submit (Formspree) ──
+    // ── Form submit (/api/contact → email con Resend) ──
     async function handleSubmit(e) {
       e.preventDefault();
       const form = e.target;
