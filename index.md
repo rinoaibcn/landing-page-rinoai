@@ -57,12 +57,11 @@ La propia web de RinoAI puntúa nivel 4 de 5, "Agent-Integrated", en el perfil
 completo del mismo escáner.
 
 ## Quién está detrás
-Mauro Gutiérrez Clemente, cofundador de RinoAI. Especialista en sistemas y
+Mauro Gutiérrez Clemente, CEO y fundador de RinoAI. Especialista en sistemas y
 ciberseguridad, centrado en aplicar la IA a la operativa de las empresas. Ha
 desarrollado proyectos de automatización, análisis de datos y optimización de
 procesos con IA en entornos empresariales reales y tiene formación específica
-en IA generativa y automatización. Trabajas
-directamente con los fundadores, desde la primera llamada hasta la puesta en
+en IA generativa y automatización. Trabajas directamente con el equipo de RinoAI, sin intermediarios, desde la primera llamada hasta la puesta en
 producción.
 LinkedIn: https://www.linkedin.com/in/maurogutierrezclemente/
 

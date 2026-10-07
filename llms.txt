@@ -42,8 +42,8 @@
 
 ## Quién está detrás
 
-- Mauro Gutiérrez Clemente, cofundador. Especialista en sistemas y ciberseguridad, centrado en aplicar la IA a la operativa de las empresas; ha desarrollado proyectos de automatización, análisis de datos y optimización de procesos con IA en entornos empresariales reales y tiene formación específica en IA generativa y automatización. [LinkedIn](https://www.linkedin.com/in/maurogutierrezclemente/) · [YouTube](https://www.youtube.com/@mauro.gutierrez)
-- Los clientes trabajan directamente con los fundadores, desde la primera llamada hasta la puesta en producción.
+- Mauro Gutiérrez Clemente, CEO y fundador. Especialista en sistemas y ciberseguridad, centrado en aplicar la IA a la operativa de las empresas; ha desarrollado proyectos de automatización, análisis de datos y optimización de procesos con IA en entornos empresariales reales y tiene formación específica en IA generativa y automatización. [LinkedIn](https://www.linkedin.com/in/maurogutierrezclemente/) · [YouTube](https://www.youtube.com/@mauro.gutierrez)
+- Los clientes trabajan directamente con el equipo de RinoAI, sin intermediarios, desde la primera llamada hasta la puesta en producción.
 
 ## Cómo trabaja RinoAI
 
