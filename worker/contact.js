@@ -49,7 +49,7 @@ export async function handleContact(request, env) {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      from: env.CONTACT_FROM || 'Web RinoAI <onboarding@resend.dev>',
+      from: 'Web RinoAI <onboarding@resend.dev>',
       to: [env.CONTACT_TO || 'rinoai.bcn@gmail.com'],
       reply_to: email,
       subject: `Nueva solicitud de llamada: ${nombre}`,
