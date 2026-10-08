@@ -1,7 +1,7 @@
 /* RinoAI — botón + ventana flotante de WhatsApp (esquina inferior derecha).
    Al abrir, 3 mensajes aparecen con efecto de "escribiendo…". */
 (function () {
-  var NUM = '34683327908';
+  var NUM = '34608292919';
   var NAME = 'RinoAI';
   var AVATAR = '/icon.png';
   var MSGS = [

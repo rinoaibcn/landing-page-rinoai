@@ -34,7 +34,7 @@ CÓMO TRABAJAMOS:
 CONTACTO (RinoAI SÍ atiende por todos estos canales):
 • Formulario en rinoai.es, sección "Hablemos".
 • Email: contacto@rinoai.es
-• WhatsApp y teléfono: +34 683 32 79 08
+• WhatsApp y teléfono: +34 608 29 29 19
 • Blog con guías prácticas: rinoai.es/blog
 • Ficha de empresa en Google (Google Maps): https://www.google.com/maps?cid=749125973088294961 — si preguntan si RinoAI tiene ficha en Google, la respuesta es sí y puedes dar ese enlace.
 
