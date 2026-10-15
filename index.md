@@ -41,6 +41,16 @@ cookies, y preparadas desde el primer día para Google y para ChatGPT.
   diferencia de un chatbot, cuándo compensa y cómo se evita que invente.
   https://rinoai.es/agentes-de-ia-para-empresas-barcelona
 
+## Ejemplos funcionando
+
+- Asistente con IA de esta web: responde a los visitantes con la información
+  real de RinoAI, sin inventar precios, y los lleva al contacto.
+- Agente de IA en el WhatsApp de RinoAI (+34 608 29 29 19): responde al momento
+  a cualquier hora y avisa de que es una IA, entiende notas de voz e imágenes,
+  hace las preguntas clave y, si encaja, envía el enlace para reservar la
+  llamada inicial gratuita. Si alguien pide hablar con una persona, pasa la
+  conversación al equipo. Se puede probar en https://wa.me/34608292919
+
 ## Casos de cliente
 
 ### BCs People — web a medida y visibilidad en IA (AEO)

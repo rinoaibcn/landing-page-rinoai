@@ -38,6 +38,7 @@
 ## Ejemplos de lo que construimos
 
 - Asistente con IA de rinoai.es: responde a los visitantes con la información real de RinoAI, sin inventar precios, y los lleva al contacto. Se puede probar en la propia web.
+- Agente de IA en el WhatsApp de RinoAI (+34 608 29 29 19): responde al momento a cualquier hora y avisa de que es una IA, entiende notas de voz e imágenes, hace las preguntas clave y, si encaja, envía el enlace para reservar la llamada inicial gratuita. Si alguien pide hablar con una persona, pasa la conversación al equipo. Se puede probar escribiendo a https://wa.me/34608292919.
 - [Web de BCs People](https://bcspeople.com): web a medida para una consultoría de recursos humanos, adaptada al móvil y con el servicio de visibilidad en IA y buscadores (AEO) aplicado.
 
 ## Quién está detrás

@@ -1122,7 +1122,7 @@
     .demos-header .section-label { padding-left: 0; }
     .demos-header .section-label::before { display: none; }
     .demos-header .section-sub { margin: 0 auto; }
-    .demos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .demos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .demo-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.3s, box-shadow 0.3s; }
     .demo-card:hover { border-color: rgba(108,99,255,0.5); box-shadow: 0 24px 64px rgba(108,99,255,0.15); }
     .demo-shot { aspect-ratio: 4/3; overflow: hidden; border-bottom: 1px solid var(--border); background: var(--bg3); }
@@ -1139,8 +1139,10 @@
     .demo-btn { padding: 11px 22px; font-size: 0.92rem; font-family: inherit; line-height: 1.6; }
     .demo-link { color: var(--accent2); font-size: 0.9rem; font-weight: 600; text-decoration: none; }
     .demo-link:hover { color: var(--text); }
+    @media (max-width: 1180px) {
+      .demos-grid { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
+    }
     @media (max-width: 900px) {
-      .demos-grid { grid-template-columns: 1fr; }
       .demo-body { padding: 22px 20px 24px; }
     }
     @media (max-width: 640px) {
@@ -1702,6 +1704,19 @@
           </div>
         </article>
         <article class="demo-card reveal stagger-2">
+          <div class="demo-shot"><img src="/assets/demo-whatsapp.jpg" alt="Conversación real con el agente de IA de RinoAI en WhatsApp: ofrece a una clínica dental la llamada inicial gratuita y le envía el enlace para reservarla" width="1200" height="900" loading="lazy"></div>
+          <div class="demo-body">
+            <span class="demo-tag">Funcionando en WhatsApp</span>
+            <h3>Agente de IA que atiende tu WhatsApp</h3>
+            <p><strong>El problema:</strong> mensajes que llegan mientras atiendes a otro cliente o fuera de horario y se quedan horas sin respuesta.</p>
+            <p><strong>Lo que hace:</strong> responde al momento, a cualquier hora, y avisa de que es una IA. Entiende notas de voz e imágenes, hace las preguntas clave y, si encaja, envía el enlace para reservar la llamada. Si alguien pide hablar con una persona, pasa la conversación al equipo.</p>
+            <div class="demo-actions">
+              <a href="https://wa.me/34608292919" class="btn-primary demo-btn" target="_blank" rel="noopener" aria-label="Pruébalo ahora: abre una conversación con el agente en WhatsApp">Pruébalo ahora</a>
+              <a href="/servicios/agentes-ia" class="demo-link">Ver servicio →</a>
+            </div>
+          </div>
+        </article>
+        <article class="demo-card reveal stagger-3">
           <div class="demo-shot"><img src="/assets/demo-bcspeople.jpg" alt="Portada de la web de BCs People, consultoría de recursos humanos" width="1200" height="900" loading="lazy"></div>
           <div class="demo-body">
             <span class="demo-tag">Proyecto de cliente</span>
