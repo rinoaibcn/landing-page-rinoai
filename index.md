@@ -1,4 +1,4 @@
-# RinoAI — IA y Automatizaciones para Empresas | Barcelona
+# RinoAI | IA y Automatizaciones para Empresas | Barcelona
 
 Tu equipo deja de copiar datos, contestar lo mismo y perseguir facturas.
 RinoAI automatiza con IA las tareas repetitivas de pymes de hasta 50 personas,
